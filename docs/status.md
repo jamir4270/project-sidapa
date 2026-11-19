@@ -23,7 +23,7 @@
 - [ ] Get the CebQA chapter (venue, year, CebQuAD size, license).
 - [ ] Email the FilBench team asking whether anyone is working on Cebuano quantization or calibration.
 - [ ] Check whether the copra title is registered anywhere that needs a change form.
-- [ ] Add a private GitHub remote and push (backup).
+- [x] Add a GitHub remote and push (backup). Done 2026-11-17 → github.com/jamir4270/project-sidapa. Confirm the repo is **private** on GitHub.
 
 ## Waiting on
 
@@ -42,7 +42,8 @@
 
 - 2026-11-17 — First Claude session. Fixed stale text: novelty-check adviser script (now says linguist + Colab Pro),
   primer imatrix default (llama.cpp uses none by default, `VERIFY`), at-a-glance hypothesis softened, grid-size math
-  added to `methodology/compute.md` (≈194k prompts; laptop can't run it). `git init` + first local commit (no remote yet).
+  added to `methodology/compute.md` (≈194k prompts; laptop can't run it). `git init` + first local commit, then pushed to GitHub `origin/main`.
+- 2026-11-19 — Added `.claude/settings.json` so Claude is not listed as a co-author on commits or PRs.
 - Open risks flagged, not yet acted on: Qwen3 thinking mode must be disabled and logged; statistics plan has no
   multiple-comparison correction or pre-declared headline tests; check that Leipzig calibration text is news, not
   bot-written Wikipedia; re-check for newer small models before fixing the model list (Dec 7).
