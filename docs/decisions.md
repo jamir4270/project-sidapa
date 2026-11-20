@@ -55,3 +55,4 @@
 | 4 | Linguist | Who; how many hours | Dec 14 |
 | 5 | Main compute | Department GPU vs. Colab Pro | Dec 18 |
 | 6 | CebQuAD | Include if license allows; drop otherwise | Dec 7 |
+| 7 | RQ3 protocol revision (2026-11-20 brief): automatic language ID, published typologies, pilot, two blind coders, pre-set alpha threshold; who is the second coder | Adopt / adopt partly / keep original | Dec 7 (chapter 3) |

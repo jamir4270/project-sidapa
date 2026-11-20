@@ -2,7 +2,7 @@
 
 *Update at the end of every working session. Newest information at the top of each section.*
 
-**Last updated:** 2026-11-17
+**Last updated:** 2026-11-20
 **Phase:** 1 of 5 — Prepare and propose (Nov 17 → Dec 18)
 **Next milestone:** Proposal defense, Friday 2026-12-18
 
@@ -17,7 +17,7 @@
 - [ ] NCRC-V visit with the questionnaire (expert help, dataset availability, complexity). Record answers in `meetings/`.
 - [ ] Adviser meeting with the one-page pitch (`at-a-glance.md` + RQs). Get a yes / no / "show me a proof of concept."
 - [ ] Ask the department about borrowing the GPU: which GPU, remote access, booking rules, storage.
-- [ ] Ask VSU language faculty whether a Cebuano linguist can verify the error taxonomy.
+- [ ] Ask VSU language faculty whether a Cebuano linguist can verify the error taxonomy. Also find a second Cebuano-speaking coder for RQ3 (see revised protocol).
 - [ ] Laptop: check Task Manager → Memory → "Slots used"; set the page file to System managed.
 - [ ] Install llama.cpp; run `llama-bench` on one 4B model, CPU vs Vulkan; record numbers in `methodology/compute.md`.
 - [ ] Get the CebQA chapter (venue, year, CebQuAD size, license).
@@ -39,6 +39,13 @@
 - **Time:** five weeks to the proposal defense. Protect the week-2 proof of concept.
 
 ## Recent changes
+
+- 2026-11-20 — Two Word handouts: `docs/Search-and-Shrink-Explained.docx` (full explainer with analogies) and
+  `docs/Search-and-Shrink-Pitch-Guide.docx` (script, Q&A bank, asks, one-page leave-behind). RQ3 research brief
+  (`reference/reports/2026-11-20 RQ3 standardized error taxonomy brief.md`): proposed protocol now in
+  `methodology/error-taxonomy.md` (automatic language ID, published starting typologies, hybrid coding with ending
+  conditions, pilot, two blind coders, Krippendorff's alpha with pre-set threshold). **Pending Jamir/adviser approval.**
+  New RQ3 sources added to `literature/sources.md` as `VERIFY` (none opened yet).
 
 - 2026-11-17 — First Claude session. Fixed stale text: novelty-check adviser script (now says linguist + Colab Pro),
   primer imatrix default (llama.cpp uses none by default, `VERIFY`), at-a-glance hypothesis softened, grid-size math

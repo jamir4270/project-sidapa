@@ -20,6 +20,24 @@ Tags: `VERIFIED` opened and checked · `VERIFY` secondary or memory · `UNCONFIR
 | Chimoto et al. | "Calibrating Beyond English," arXiv 2601.18306 | Target-language calibration (African languages) | VERIFY |
 | Community imatrix test | Reddit r/LocalLLaMA, English vs Norwegian vs Malayalam imatrix | No significant difference | VERIFY (forum; cite cautiously) |
 
+## RQ3 error taxonomy (added 2026-11-20; found by search, not yet opened)
+
+| Short name | Citation / link | What it gives us | Tag |
+|---|---|---|---|
+| MQM | W3C MQM Community Group, https://www.w3.org/community/mqmcg ; Lommel et al. 2014 | Standard error typology (Accuracy, Fluency, …; minor/major/critical) | VERIFY |
+| Freitag et al. 2021 | "Experts, Errors, and Context," TACL 9:1460–1474, https://arxiv.org/abs/2104.14478 | MQM applied by professional annotators | VERIFY |
+| Kocmi et al. 2024 | "Error Span Annotation," WMT 2024, https://aclanthology.org/2024.wmt-1.131 | Lighter alternative to MQM | VERIFY |
+| Maynez et al. 2020 | "On Faithfulness and Factuality in Abstractive Summarization," ACL, https://arxiv.org/abs/2005.00661 | Intrinsic vs extrinsic hallucination | VERIFY |
+| Ovalle et al. 2025 | "Beg to Differ: Understanding Reasoning-Answer Misalignment Across Languages," EMNLP MRL workshop, https://arxiv.org/abs/2512.22712 | Reasoning–answer misalignment taxonomy, multilingual | VERIFY (v1/v2 differ) |
+| Dou et al. 2022 | "Scarecrow," ACL, https://aclanthology.org/2022.acl-long.501 | How to build an error typology via pilot annotation | VERIFY |
+| Fereday & Muir-Cochrane 2006 | IJQM 5(1):80–92, DOI 10.1177/160940690600500107 | Hybrid deductive–inductive coding | VERIFY |
+| Nickerson et al. 2013 | "A method for taxonomy development…," EJIS 22(3):336–359, DOI 10.1057/ejis.2012.26 | Taxonomy method with ending conditions | VERIFY |
+| Kundisch et al. 2021 | "An Update for Taxonomy Designers," BISE, https://link.springer.com/article/10.1007/s12599-021-00723-x | Only 48% of taxonomies report ending conditions | VERIFY |
+| Marchisio et al. 2024b | "Understanding and Mitigating Language Confusion in LLMs," EMNLP, https://arxiv.org/abs/2406.20052 | Line-level pass rate (automatic language-switch metric) | VERIFY |
+| GlotLID | Kargaran et al., EMNLP 2023 Findings, https://arxiv.org/abs/2310.16248 | Language ID for 1,665 languages | VERIFY (`ceb_Latn` coverage) |
+| Krippendorff | *Content Analysis* (2004/2019); thresholds 0.667 / 0.800 | Reliability thresholds | VERIFY |
+| O'Connor & Joffe 2020 | IJQM 19, DOI 10.1177/1609406919899220 | Intercoder reliability practice | VERIFY |
+
 ## Datasets
 
 | Dataset | Link | License | Tag |

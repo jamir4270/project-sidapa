@@ -4,7 +4,7 @@
 
 | Role | Person | Does |
 |---|---|---|
-| Researcher | Jamir | Collects errors, first-pass notes, double-labels 100 items blind |
+| Researcher | Jamir | Collects errors, open coding, adjudication support; second coder only if no other Cebuano speaker is available |
 | Linguist | `TBD` (VSU language/literature faculty) | Finalizes categories and codebook; labels errors (or a random 100); has the final say on disagreements |
 
 No external SRC member is required by the department; the linguist strengthens validity.
@@ -17,12 +17,22 @@ No external SRC member is required by the department; the linguist strengthens v
 
 ## Steps
 
-1. **Open coding (Jamir):** a one-line note per error in your own words.
-2. **Codebook (linguist):** group notes into 5–8 categories; one-page codebook with definition + one real example each.
-3. **Labeling (linguist):** label all errors, or a random 100 if time is short (Jamir labels the rest using the codebook).
-4. **Agreement:** Jamir labels the same 100 blind. Compute Cohen's kappa (`sklearn.metrics.cohen_kappa_score`). Target ≥ 0.6.
-5. **Resolution:** disagreements → linguist's label wins. Report kappa before resolution.
-6. **Analysis:** category shares by quantization level; which grow with compression.
+*Revised 2026-11-20 (proposed; confirm with Jamir and the adviser). Why and sources: `reference/reports/2026-11-20 RQ3 standardized error taxonomy brief.md`.*
+
+1. **Automatic layer (no human judgment):** language ID on every output line with GlotLID (line-level pass rate,
+   after Marchisio et al. 2024) → "answered in Tagalog" / "fell back to English"; parser → "instruction failure". `VERIFY` GlotLID covers `ceb_Latn`.
+2. **Deductive start:** starter codebook from published typologies: MQM Accuracy vs Fluency; intrinsic vs extrinsic
+   hallucination (Maynez et al. 2020); reasoning–answer misalignment (Ovalle et al. 2025). Linguist reviews it.
+3. **Inductive rounds (hybrid coding, Fereday & Muir-Cochrane 2006):** Jamir open-codes batches of 30 errors; the linguist
+   adds or merges Cebuano-specific categories. Stop when a full batch adds no new category; write the ending conditions
+   down (Nickerson et al. 2013): categories don't overlap, every error fits one, the set is concise.
+4. **Pilot:** two coders label 30 items blind; compare; refine definitions. Pilot items are excluded from the agreement score.
+5. **Reliability:** two coders label 100 **fresh** items independently, with **model and quantization level hidden**.
+   Second coder: a Cebuano speaker other than Jamir if possible (`TBD`); otherwise Jamir, stated as a limitation.
+   Report Krippendorff's alpha (or Cohen's kappa) overall and per category, before resolution. Pre-set thresholds in
+   chapter 3: α ≥ 0.800 reliable, 0.667–0.800 tentative, < 0.667 merge or redefine the category. `TBD` with adviser.
+6. **Resolution:** the linguist's label wins on disagreements.
+7. **Analysis:** category shares by quantization level, with intervals; no strong claims for rare categories.
 
 ## Starter categories (to test, not to impose)
 
@@ -39,5 +49,5 @@ No external SRC member is required by the department; the linguist strengthens v
 
 ## Logistics
 
-- Prepare a spreadsheet: item ID, language, model, level, passage, question, output, gold, Jamir's note, linguist label, Jamir label.
-- Budget the linguist's time: ~1 hour codebook session + ~2–3 hours labeling (estimate). Acknowledge in the thesis.
+- Prepare a spreadsheet: item ID, language, passage, question, output, gold, auto language-ID flag, Jamir's note, coder 1 label, coder 2 label. Keep model and level in a separate key file until labeling is done.
+- Budget the linguist's time: ~1 hour codebook session + ~2–3 hours labeling + ~1 hour pilot (estimate); second coder ~3–4 hours. Acknowledge in the thesis.
