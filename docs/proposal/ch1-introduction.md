@@ -24,4 +24,4 @@
 - From `../methodology/research-questions.md`.
 
 ## Time and Place of the Study
-- Nov 2026 – May 2027; DCST, VSU; cloud compute (Colab Pro / Kaggle); Gantt chart from `../timeline.md`.
+- Nov 2026 – May 2027; DCST, VSU; cloud compute (AWS EC2 GPU instance; Kaggle as backup); Gantt chart from `../timeline.md`.

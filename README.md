@@ -22,7 +22,7 @@ holds up on a realistic corpus.
 
 ```
 docs/          thesis documentation (status, primer, plans, chapters, meeting notes)
-reference/     background material: the parked copra study, earlier research reports
+reference/     background material: the dropped copra study, earlier research reports
 experiments/   code for the experiments (see experiments/README.md)
 data/          local-only data and model files — never committed
 ```
@@ -31,7 +31,7 @@ data/          local-only data and model files — never committed
 
 | Date | Milestone |
 |---|---|
-| Week of 2026-11-17 | NCRC-V reality check (copra), adviser approval of the switch |
+| Week of 2026-11-17 | NCRC-V check done; copra dropped (2026-11-21) |
 | 2026-11-30 | Proof of concept done |
 | **2026-12-18** | **Proposal defense** |
 | 2027-01-04 → 02-21 | Experiments (cloud) |

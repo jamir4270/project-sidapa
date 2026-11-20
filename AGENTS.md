@@ -34,9 +34,9 @@ is apparatus; the contribution is the research questions, the experiment grid an
 ## 3. Current status (snapshot — `docs/status.md` is the live version)
 
 - **As of 2026-11-17:** topic chosen, novelty checked, plan written. Nothing has been run yet.
-- The switch from his **previous, already-defended copra study** to this topic is **not yet official**.
-  It depends on (1) a last reality check with NCRC-V this week and (2) the adviser's approval.
-  See `reference/copra-study.md`.
+- **As of 2026-11-21:** the NCRC-V check is done and the **copra study is dropped**; this is the thesis topic.
+  No adviser approval is needed before the proposal: the adviser and panel weigh in **at the proposal defense**.
+  Background: `reference/copra-study.md`.
 - **Next milestone:** proposal defense on **Friday, 2026-12-18**. The proposal covers the first chapters
   (introduction, review of literature, methodology; see `docs/proposal/README.md` for the open question
   about chapter numbering).
@@ -102,7 +102,7 @@ Full detail: `docs/literature/novelty-check.md`.
 | Machine | Use | Notes |
 |---|---|---|
 | Lenovo ThinkPad T14 Gen 1 — Ryzen 7 PRO 4750U (Zen 2), Vega 7 iGPU, 16GB DDR4 (≈6GB free under Windows), 256GB SSD | Code, debugging on small samples, search experiments (CPU), speed/memory benchmarks | Expect ~3–5 s per Belebele prompt for a 4B model (estimate). Vega iGPU may not beat CPU via Vulkan; ROCm unsupported; no NPU. Up to 4B models comfortably. |
-| Google Colab Pro ($9.99/mo) | Main paid compute for the full grid, January | Subscribe only when the grid is ready. Use T4/L4. |
+| AWS EC2 `g4dn.xlarge` (T4 16 GB), ap-southeast-1, paid from credits | Main compute for the full grid (decided 2026-11-21; replaces Colab Pro) | Spot for unattended runs; one instance type for every comparison; budget alert on. |
 | Kaggle (free) | Pilots, backup, building calibration files | ~30 GPU-h/week, 12-h sessions (VERIFY current quota) |
 | Department GPU | Fastest option if borrowable | Borrowing rules TBD |
 | RunPod | Emergency paid backup | ~$0.34–0.69/h for an RTX 4090 (VERIFY) |
@@ -135,7 +135,7 @@ cebuano-thesis/
 │   ├── proposal/              ← chapter drafts for the proposal defense
 │   └── meetings/              ← adviser, NCRC-V, linguist meeting notes
 ├── reference/
-│   ├── copra-study.md         ← the parked previous study and the go/no-go rule
+│   ├── copra-study.md         ← the dropped previous study (background only)
 │   └── reports/               ← earlier research reports (read-only background)
 ├── experiments/               ← code lives here (see experiments/README.md)
 └── data/                      ← local only, git-ignored (copyrighted corpora, model files)

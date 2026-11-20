@@ -42,13 +42,6 @@ At the end of the session, update docs/status.md (and docs/decisions.md if we de
 
 ## 3. Useful task prompts
 
-**After the NCRC-V visit**
-```
-I visited NCRC-V. Here's what they said: [notes].
-Fill in docs/meetings/2026-11-ncrc-v-visit.md, apply the go/no-go rule, record the decision in docs/decisions.md,
-update docs/status.md, and draft what I should tell my adviser.
-```
-
 **Proof of concept (week 2)**
 ```
 Help me build the week-2 proof of concept described in docs/timeline.md and docs/methodology/experiment-design.md,

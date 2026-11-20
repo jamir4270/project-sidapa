@@ -13,7 +13,7 @@ than English; for Cebuano, nobody has measured by how much on real tasks (to our
 | Core question | How much accuracy does Cebuano lose at each compression level, vs. English and Tagalog? |
 | Most original part | Does "tuning" the compression with Cebuano text protect Cebuano? |
 | Data | Public datasets only. No fieldwork. |
-| Compute | Laptop for coding; Colab Pro ($9.99/mo) for the big runs |
+| Compute | Laptop for coding and speed tests; AWS GPU instance (paid from credits) for the big runs |
 | Next big date | Proposal defense, Friday Dec 18, 2026 |
 | Final defense | Mid to late May 2027 |
 
@@ -38,7 +38,7 @@ Even "Cebuano is no worse" is a useful result: developers could compress safely.
 
 ## Where we are
 
-Planning done and novelty checked; nothing run yet. Waiting on NCRC-V (last copra check) and the adviser's yes.
+Planning done and novelty checked; topic final (copra dropped 2026-11-21); nothing run yet. Next: proof of concept, then proposal chapters.
 Live status: `status.md`.
 
 ## The whens

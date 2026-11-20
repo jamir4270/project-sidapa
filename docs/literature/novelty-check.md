@@ -21,7 +21,7 @@
 > The workspace keeps pipeline order (search, then read). See `../methodology/research-questions.md`.
 >
 > **Superseded points (2026-11-17):** this report predates later decisions. (1) RQ3 uses a **Cebuano linguist**,
-> not just "a second native speaker" (`../decisions.md`). (2) The main grid runs on **Colab Pro**, not the laptop;
+> not just "a second native speaker" (`../decisions.md`). (2) The main grid runs on **AWS (credits)**, not the laptop;
 > the "~15 laptop hours at ~1 s/prompt" figure is too optimistic, see the grid-size math in
 > `../methodology/compute.md`. (3) The adviser script at the end has been updated to match.
 
@@ -121,7 +121,7 @@ Never write "first Cebuano retrieval baselines," "first Cebuano QA" or "first qu
 
 ## What to tell your adviser
 
-"A novelty check turned up close prior work, so I'm reframing. MTEB already publishes Cebuano retrieval scores on Belebele, including a BM25 baseline, and UP Cebu's CebQA compared BM25 with dense retrieval on Cebuano news. A November 2026 AACL Findings paper measured perplexity of quantized models on Cebuano and Filipino, but only with GPTQ, Indonesian calibration and no downstream tasks. My core contribution is now the first downstream evaluation of llama.cpp quantization levels in Cebuano and Tagalog against English, plus a test of whether calibrating on Cebuano or Tagalog text reduces the loss. Retrieval becomes a realistic end-to-end chapter: harder distractor passages, Cebuano-aware keyword search, and quantized readers, using the MTEB numbers as reproduced baselines. An error taxonomy, finalized and verified by a Cebuano linguist, finishes the study. I code and pilot on my laptop and run the full grid on Colab Pro (about $10 a month), and I'll bring a pilot to the December 18 defense."
+"A novelty check turned up close prior work, so I'm reframing. MTEB already publishes Cebuano retrieval scores on Belebele, including a BM25 baseline, and UP Cebu's CebQA compared BM25 with dense retrieval on Cebuano news. A November 2026 AACL Findings paper measured perplexity of quantized models on Cebuano and Filipino, but only with GPTQ, Indonesian calibration and no downstream tasks. My core contribution is now the first downstream evaluation of llama.cpp quantization levels in Cebuano and Tagalog against English, plus a test of whether calibrating on Cebuano or Tagalog text reduces the loss. Retrieval becomes a realistic end-to-end chapter: harder distractor passages, Cebuano-aware keyword search, and quantized readers, using the MTEB numbers as reproduced baselines. An error taxonomy, finalized and verified by a Cebuano linguist, finishes the study. I code and pilot on my laptop and run the full grid on an AWS GPU instance paid from my credits, and I'll bring a pilot to the December 18 defense."
 
 ## Conclusion
 

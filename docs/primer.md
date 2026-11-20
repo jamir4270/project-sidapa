@@ -217,8 +217,8 @@ Small test sets make scores wobbly. Rules (after [Miller 2024, "Adding Error Bar
 
 ## 15. Compute
 
-Your T14 is for code, small runs, search experiments and speed benchmarks. The full grid runs on **Colab Pro**
-(January) with **Kaggle** as free backup; the department GPU if borrowable. Hardware changes speed, not results,
+Your T14 is for code, small runs, search experiments and speed benchmarks. The full grid runs on **AWS EC2 `g4dn.xlarge`**
+(one T4 GPU, paid from credits; decided 2026-11-21) with **Kaggle** as free backup; the department GPU if borrowable. Hardware changes speed, not results,
 as long as each comparison runs entirely on one machine type. Full detail: `methodology/compute.md`.
 
 ---
@@ -245,7 +245,7 @@ as long as each comparison runs entirely on one machine type. Full detail: `meth
 2. Instructions in English vs. Cebuano in the prompt `TBD` (discuss with adviser)
 3. Which proposal chapters the Dec 18 defense covers (VSU DCST format) `TBD`
 4. Linguist: who, and how many hours `TBD`
-5. Department GPU vs. Colab Pro as the main compute `TBD`
+5. Main compute: AWS decided 2026-11-21; credit expiry and GPU quota still `TBD`
 6. Whether to include CebQuAD (depends on its license) `TBD`
 
 ## 18. Claims you cannot use yet
@@ -259,12 +259,12 @@ as long as each comparison runs entirely on one machine type. Full detail: `meth
 | Whether Waskito et al. had an earlier arXiv preprint | `VERIFY` |
 | arXiv 2505.20276 ("4-bit hurts non-English more") | `UNCONFIRMED` — couldn't open; don't cite |
 | Laptop speeds (3–5 s/prompt) and cloud run times | Estimates; measure in week 1 |
-| Kaggle quota, Colab Pro units, RunPod prices | `VERIFY` at time of use |
+| Kaggle quota, AWS instance prices, RunPod prices | `VERIFY` at time of use |
 | Cebuano speaker count (~20 million) | `VERIFY` |
 
 ## 19. Order of work
 
-1. NCRC-V reality check; adviser approval of the switch.
+1. ~~NCRC-V reality check~~ Done 2026-11-21; copra dropped. No pre-approval step; adviser weighs in at the defense.
 2. Proof of concept: reproduce MTEB numbers; one 4B model at Q8/Q4/Q2 on 100 questions per language.
 3. Draft proposal chapters; defend Dec 18.
 4. Holiday: panel revisions, decoy corpus, calibration text, resumable scripts.

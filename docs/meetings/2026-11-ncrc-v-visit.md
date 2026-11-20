@@ -19,8 +19,8 @@ Bring the prepared questionnaire. The BAFS grading standard is already public; d
 | Neither | Switch |
 
 ## What they said
--
+- Visit completed (reported 2026-11-21). Details not recorded here.
 
 ## Outcome
-- [ ] Decision recorded in `../decisions.md`
-- [ ] Adviser informed (script in `../../reference/copra-study.md`)
+- [x] Decision recorded in `../decisions.md`: **switch** — copra study dropped (2026-11-21).
+- [x] No adviser approval needed before the proposal; adviser and panel weigh in at the defense.

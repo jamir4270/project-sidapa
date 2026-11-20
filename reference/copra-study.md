@@ -1,6 +1,6 @@
-# The Parked Copra Study
+# The Dropped Copra Study
 
-*Background only. This was the researcher's previous, already-defended thesis. It is parked pending the NCRC-V reality check.*
+*Background only. This was the researcher's previous, already-defended thesis outline. **Dropped 2026-11-21** after the NCRC-V check; not being pursued.*
 
 ## What it was
 
@@ -14,7 +14,7 @@ revised by a primer (Nov 14, 2026). A phone app that grades one copra piece:
 
 Closest prior work: Elecito et al. (2025), Southern Leyte State University, YOLOv11 detection, company A/B/C grades, 93.65% on 126 test images.
 
-## Why it is parked
+## Why it was dropped
 
 | Dependency | Status (Nov 2026) |
 |---|---|
@@ -28,12 +28,12 @@ Closest prior work: Elecito et al. (2025), Southern Leyte State University, YOLO
 The study is well designed but **dependent**: its quality is decided by people and access not yet secured. The Cebuano
 study's quality is decided by the researcher's own work.
 
-## What would revive it
+## What would have revived it (historical)
 
 NCRC-V commits, this week, (1) a named expert with a threshold session within ~2 weeks, and (2) access to graded samples or a buying station.
 Then: keep copra (already defended), narrow scope to model + rules, app as demo.
 
-## Script for the adviser (if switching)
+## Script for the adviser (historical; no approval step is needed)
 
 > "I went back to NCRC-V with a questionnaire on my three hurdles: expert help, dataset availability and complexity.
 > [What they said.] Without a committed expert and a source of samples, the copra study depends on things I can't secure

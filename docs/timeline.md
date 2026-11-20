@@ -7,7 +7,7 @@
 
 | Phase | Dates | Goal |
 |---|---|---|
-| 1. Prepare and propose | Nov 17 → Dec 18 | Adviser approval, proof of concept, proposal chapters, **defense Dec 18** |
+| 1. Prepare and propose | Nov 17 → Dec 18 | Proof of concept, proposal chapters, **defense Dec 18** |
 | 2. Get ready (holidays, light work) | Dec 19 → Jan 3 | Panel revisions, decoy corpus, calibration text, resumable scripts |
 | 3. Run the experiments | Jan 4 → Feb 21 | RQ2, RQ2b, RQ1, conditions, statistics (cloud, mostly hands-off) |
 | 4. Sort the mistakes | Feb 22 → Mar 21 | RQ3 with the linguist |
@@ -18,18 +18,18 @@
 
 | Wk | Dates | Do | Done when | Status |
 |---|---|---|---|---|
-| 1 | Nov 17–23 | NCRC-V visit; adviser pitch; ask about dept GPU and a linguist; RAM slots + page file; install llama.cpp, `llama-bench` CPU vs Vulkan | Adviser decision; laptop speed numbers | [ ] |
+| 1 | Nov 17–23 | ~~NCRC-V visit~~ (done; copra dropped); AWS quota + budget alert; ask about a linguist; RAM slots + page file; install llama.cpp, `llama-bench` CPU vs Vulkan | Laptop speed numbers; AWS quota requested | [~] |
 | 2 | Nov 24–30 | Proof of concept: reproduce MTEB BM25 + e5 Cebuano numbers; one 4B model at Q8/Q4/Q2 on 100 Qs per language (Kaggle if slow); read papers 1–9 | Two tables + one chart | [ ] |
 | 3 | Dec 1–7 | Draft proposal chapters (intro, literature, definitions, methodology incl. license table and compute plan) | Full draft to adviser | [ ] |
 | 4 | Dec 8–14 | Revise with adviser; slides; book panel; dry run | Panel date confirmed | [ ] |
 | 5 | Dec 15–18 | Final dry run; **defend Dec 18** | Approved, revisions listed | [ ] |
 | 6–7 | Dec 19–Jan 3 | Panel revisions; build decoy corpus (CebuaNER) + calibration text (Leipzig); resumable scripts | Corpus files, tested scripts | [ ] |
-| 8 | Jan 4–10 | Subscribe Colab Pro (or book dept GPU); private datasets; reproduce one FilBench Belebele number; start RQ2 grid | Baseline reproduced; grid running | [ ] |
+| 8 | Jan 4–10 | AWS: confirm quota and budget alert (or book dept GPU); private datasets; reproduce one FilBench Belebele number; start RQ2 grid | Baseline reproduced; grid running | [ ] |
 | 9 | Jan 11–17 | Finish RQ2 main grid; parse-failure rates | Accuracy table | [ ] |
 | 10 | Jan 18–24 | RQ2b: build 4 calibration files; run calibration grid | Calibration table | [ ] |
 | 11 | Jan 25–31 | RQ1: search on the big library (BM25, e5, BGE-M3, affix BM25, hybrid); library-size curve | Search table + curve | [ ] |
 | 12 | Feb 1–7 | RQ2 conditions (retrieved, none); SIB-200, Tatoeba, FLORES perplexity | Conditions table | [ ] |
-| 13 | Feb 8–14 | **Buffer**; laptop speed/memory benchmarks per level; cancel Colab Pro if done | All runs complete | [ ] |
+| 13 | Feb 8–14 | **Buffer**; laptop speed/memory benchmarks per level; delete AWS disks/instances if done (S3 results kept) | All runs complete | [ ] |
 | 14 | Feb 15–21 | Statistics: CIs, paired tests, quantization gap; first figures | Results with error bars | [ ] |
 | 15 | Feb 22–28 | RQ3: explanation run; collect 200–300 wrong outputs; first-pass notes; send to linguist | Sample sent | [ ] |
 | 16 | Mar 1–7 | Linguist finalizes codebook | Codebook | [ ] |
