@@ -42,8 +42,8 @@
 
 - 2026-11-21 — **NCRC-V task finished; copra study dropped.** Topic switch is final. Adviser has no say on the topic
   before the proposal (their say is at the defense), so no approval step. Updated AGENTS.md, decisions, copra note,
-  NCRC-V meeting note, at-a-glance, README, timeline, primer. **Not yet updated:** the Word pitch guide is still framed
-  around asking for "approval to switch."
+  NCRC-V meeting note, at-a-glance, README, timeline, primer. Word pitch guide reworked as a briefing + defense-pitch guide
+  (no approval request).
 
 - 2026-11-21 — Compute priority set: AWS → Kaggle/Colab → department PC (last resort; liability). Logged in `decisions.md`, `methodology/compute.md`.
 
