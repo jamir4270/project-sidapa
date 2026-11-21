@@ -11,7 +11,8 @@ No external SRC member is required by the department; the linguist strengthens v
 
 ## Inputs
 
-- **Explanation run:** 200 Cebuano Belebele questions; model writes a 1–2 sentence reason, then the letter; at Q8_0 and Q2_K.
+- **Status:** conditional on confirming a linguist and/or second coder by **Jan 31, 2027**; fallback in `../decisions.md` (2026-11-22).
+- **Explanation run:** 200 Cebuano Belebele questions, drawn from those that **flipped right (Q8_0) → wrong (Q2_K)** in RQ2 plus a matched set that stayed right (split `TBD`); model writes a 1–2 sentence reason, then the letter; at Q8_0 and Q2_K.
 - **Tatoeba ceb→eng translations** at Q8_0 and Q2_K (sample).
 - Sample 200–300 wrong outputs, stratified by level and model.
 

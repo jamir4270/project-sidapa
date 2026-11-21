@@ -36,10 +36,16 @@
 
 ## Blockers / risks right now
 
+- **RQ3 coders:** no linguist or second Cebuano coder yet. Name by Dec 14; Jan 31 cutoff, then fallback.
 - **Time:** five weeks to the proposal defense. Protect the week-2 proof of concept.
 - **Floor effect (Lab 1, 2026-11-22):** Qwen3-1.7B loops in Tagalog/Cebuano even at Q8_0. If a model scores near chance on Belebele Cebuano, it can't show compression loss. Week-2 proof of concept must run the Q8_0 floor check per candidate (proposed rule in `decisions.md`, open decision #1).
 
 ## Recent changes
+
+- 2026-11-22 — **RQ3 kept, conditional** (logged in `decisions.md`): needs a linguist and/or second Cebuano coder, named
+  by Dec 14 (target), confirmed by **Jan 31** (cutoff) or RQ3 falls back to an automatic failure analysis inside RQ2.
+  Explanation-run items now sampled from questions that flipped right→wrong (Q8_0→Q2_K). Updated research-questions,
+  error-taxonomy, experiment-design, open decision #4. (Dropping RQ3 was considered and rejected.)
 
 - 2026-11-22 — **Data analysis procedure adopted** (logged in `decisions.md`): paired clustered bootstrap for everything;
   four confirmatory claims (C1–C3 quantization gap at Q4_K_M/Q3_K_M/Q2_K, C4 calibration at Q2_K with equivalence

@@ -10,7 +10,7 @@
 | RQ2 conditions | Same models at Q8 and Q4; retrieved passage and no passage. Full grid in Cebuano; best retriever only for Tagalog/English | ~25,000 prompts | ~7 h |
 | RQ2 extra tasks | SIB-200 (99), Tatoeba (500-pair sample), FLORES+ perplexity (one model) | Small | A few hours |
 | RQ1 search | Reproduce MTEB (BM25, multilingual-e5-large-instruct) for ceb/tgl/eng; then + decoys (500 / 2,000 / 10,000), affix-stripping BM25, BGE-M3, Qwen3-Embedding-0.6B, hybrid | ~20 runs | Minutes each (CPU); large embedders in cloud |
-| RQ3 explanation run | 200 Cebuano Qs with a short reason before the answer, at Q8 and Q2 | ~1,600 prompts | A few hours |
+| RQ3 explanation run (conditional on coders, cutoff Jan 31) | 200 Cebuano Qs (flipped right→wrong Q8→Q2 + matched stayed-right) with a short reason before the answer, at Q8 and Q2 | ~1,600 prompts | A few hours |
 
 The T14 would take ~5–9 s per prompt (from Lab 1's measured speed; estimate), so the grid runs on AWS.
 

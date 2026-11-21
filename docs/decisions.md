@@ -4,6 +4,23 @@
 
 ## Decisions
 
+### 2026-11-22 — Keep RQ3, conditional on finding coders; fallback by Jan 31; sample flipped items
+- **Decision:** RQ3 (error taxonomy) stays, **on condition** that the people it needs are confirmed: a Cebuano linguist,
+  a second native-speaker coder, or both. Target to name them: **Dec 14** (open decision #4). **Cutoff: Jan 31, 2027.**
+  If nobody is confirmed by then, RQ3 as a coded taxonomy is dropped and replaced by an automatic analysis inside RQ2
+  (no new RQ): parse-failure rate and answer collapse (e.g., always one letter) per level, count of questions that flip
+  right→wrong from Q8_0 to Q2_K per language, optionally tokenizer fertility (tokens per word) per language.
+- **Minimum roles:** linguist = approve the codebook + settle unresolved disagreements (a few hours, estimate);
+  second coder = blind-label the same 100 items (~3–5 h, estimate). With only one person, a second coder matters more
+  (agreement needs two coders); a linguist alone can verify categories but gives no agreement score.
+- **Sampling change:** explanation-run items are drawn from Cebuano questions that **flipped right (Q8_0) → wrong
+  (Q2_K)** in RQ2, plus a matched set that stayed right, so RQ3 studies the mistakes compression caused. RQ2 results
+  exist before the RQ3 block (Feb 22), so this fits the timeline.
+- **Reason:** RQ3 explains *why* Cebuano loses more, which RQ2 can't; but it depends on people not yet found and falls
+  during job applications. A cutoff with a planned fallback means no half-finished RQ. Considered dropping RQ3
+  (multiple-choice answers carry no text to code; weak link to RQ2); the flipped-item sampling fixes the link.
+- **By:** Jamir, on Claude's recommendation.
+
 ### 2026-11-22 — Data analysis procedure: paired clustered bootstrap, four confirmatory claims
 - **Decision:** One inferential method for all RQs: the paired clustered bootstrap (10,000 passage resamples, same
   resamples for every condition). Only four pre-registered confirmatory claims: C1–C3 = quantization gap (Cebuano drop
@@ -127,7 +144,7 @@
 | 1 | Final model list | 3–4 models from Qwen3 1.7B/4B, Gemma 3 4B, Llama 3.2 3B, SeaLLMs v3 1.5B; optional 7–8B. **Proposed selection rule (Lab 1, 2026-11-22):** keep a model only if its Belebele Cebuano accuracy at Q8_0 is clearly above chance (25%; exact margin `TBD`), measured in the week-2 proof of concept. Lab 1 hints: Qwen3-1.7B at floor risk; Gemma 3 4B strongest | Dec 7 (chapter 3) |
 | 2 | Prompt instruction language | English vs. Cebuano | Dec 7 |
 | 3 | Proposal chapter coverage | VSU format: which chapters are "the proposal" | Nov 23 (ask adviser) |
-| 4 | Linguist | Who; how many hours | Dec 14 |
+| 4 | Linguist and/or second Cebuano coder (RQ3 is conditional on this) | Who; how many hours (minimum roles in the 2026-11-22 entry) | Dec 14 target; **Jan 31 cutoff** → fallback |
 | 5 | Main compute | **Decided 2026-11-21:** AWS → Kaggle/Colab → dept PC (see above). Still open: credit expiry, GPU quota | Dec 18 |
 | 6 | CebQuAD | Include if license allows; drop otherwise | Dec 7 |
 | 8 | Statistics thresholds: equivalence margin (proposed ±3 points; must exceed pilot CI half-width), agreement threshold (proposed 0.6), parse-failure flag (proposed 5%) | Accept / adjust after week-2 pilot | Jan 4 (before runs) |

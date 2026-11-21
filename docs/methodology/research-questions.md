@@ -23,6 +23,8 @@ from Cebuano or Tagalog text recover accuracy compared with English text or no c
 
 **RQ3 — Errors (supporting).** What kinds of errors do the models make in Cebuano, and which categories grow as
 compression increases? (Categories finalized and verified by a Cebuano linguist; agreement reported as Cohen's kappa.)
+**Conditional (2026-11-22):** runs only if a linguist and/or second Cebuano coder is confirmed by Jan 31, 2027;
+otherwise replaced by an automatic failure analysis inside RQ2 (see `../decisions.md`).
 
 ## Hypotheses (falsifiable)
 
