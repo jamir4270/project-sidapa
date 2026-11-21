@@ -209,19 +209,54 @@ Paste the tables to Claude, and they'll be recorded in `docs/methodology/compute
 
 ---
 
-## Your notes (fill in)
+## Results (run 2026-11-21 to 2026-11-22)
 
-| Question | Q4_K_M: English | Q4_K_M: Tagalog | Q4_K_M: Cebuano | Q2_K: Cebuano |
-|---|---|---|---|---|
-| Stayed in the right language? | | | | |
-| Natural grammar and verb forms? | | | | |
-| Detail and accuracy (1–5) | | | | |
-| Anything odd? | | | | |
+*Informal exploration, not data: one typhoon-preparation question per language, random sampling in the chat page,
+Unsloth-compressed files. Readings of Tagalog/Cebuano quality are Claude's first pass; **Jamir to confirm** as the
+native speaker.*
+
+### Runs
+
+| # | Model | Level | Setup | English | Tagalog | Cebuano |
+|---|---|---|---|---|---|---|
+| 1 | Qwen3-1.7B | Q4_K_M | ⚠ probably one chat (unconfirmed; may have leaked context) | Good, coherent list | Tagalog-shaped nonsense, then a repetition loop | Tagalog words mixed in, then an endless loop |
+| 2 | Qwen3-1.7B | Q8_0 (assumed) | ⚠ one chat (answers copied each other) | Good | Copied the English list | **No Cebuano at all**: answered in Tagalog, then the English list |
+| 3 | Qwen3-1.7B | Q8_0 | Separate chats | Good, 10 sensible points | Empty content, then a loop (stopped) | Run-on loop with Tagalog mixed in (stopped) |
+| 4 | Qwen3-4B | Q4_K_M | Separate chats | Good | Better grammar, empty meaning; items repeat | **Recognizably Cebuano** structure, vague/odd meaning, Tagalog leftovers; items repeat |
+| 5 | Gemma 3 4B | Q4_K_M | Separate chats | Excellent, **Philippines-specific** (PAGASA, NDRRMC) but made-up URLs | Fluent, natural, useful | **Mostly readable**; errors listed below |
+| 6 | Gemma 3 4B | Q2_K | Separate chats | Still good, but **lost local knowledge** (US resources instead) | Starts fine, then invented words, a contradiction, heavy repetition | **Collapsed at once**: nonsense, Tagalog words, endless "*Pag-susi sa Pag-susi*" loop |
+
+### Error examples seen (candidate RQ3 categories)
+
+| Seen in | Example | Category |
+|---|---|---|
+| Runs 1, 3, 4, 6 | Same phrase repeated until stopped | Repetition loop / degenerate output |
+| Runs 1, 3, 4, 5, 6 | *nangangailangan*, *mga kawani*, *Alamin*, *Sundin*, *mga sumusunod* in Cebuano | Answered in / mixed in Tagalog |
+| Run 2 | Cebuano question answered entirely in Tagalog + English | Answered in Tagalog; fell back to English |
+| Run 5 | *Aquí* (Spanish) inside Cebuano | Other-language intrusion (not Tagalog/English) |
+| Run 5 | "*Dili kaayo mahinungdan ang pagpangandam*" (preparing is "not very important") | Meaning inversion |
+| Run 5 | *sagradong gamit ug bulad*, *mga baboy o ilaga* as pets, *Himo ang mga bintana* | Wrong word sense / wrong word choice |
+| Runs 3, 6 | *nanggagahom*, *natinagpangan*, *pintint* | Invented (non-)word |
+| Run 5 | "Red, Yellow, Blue" evacuation signals; `ndrrcmc.gov.ph` | Made-up fact / URL |
+| Run 6 | English answer switches from PAGASA/NDRRMC to US agencies at Q2 | Lost local knowledge |
+
+### What it suggests (to test properly in week 2)
+
+1. **Floor-effect risk:** Qwen3-1.7B can't write Tagalog or Cebuano even at Q8_0. If its Belebele Cebuano accuracy is
+   near chance (25%), compression has nothing left to remove → drop it (model-selection rule in `../decisions.md`).
+2. **Size and family matter more than compression here:** Qwen3-4B at Q4 beat Qwen3-1.7B at Q8; Gemma 3 4B beat
+   Qwen3-4B at the same size and level.
+3. **Uneven damage:** Gemma 3 4B at Q2_K kept English, broke Tagalog partway, collapsed Cebuano first, as H2 predicts.
+   The Q2 file used Unsloth's own (probably English-heavy) calibration `VERIFY`, which is exactly what RQ2b varies.
+4. **Method lessons:** one fresh chat per question (runs 1–2 were contaminated by chat history); multiple-choice
+   accuracy, not free writing, is the right RQ2 measure for models this weak at writing.
+
+### Benchmark (Step 5) — not run yet
 
 | Benchmark | pp512 (t/s) | tg128 (t/s) | Device (CPU/Vulkan) | Date |
 |---|---|---|---|---|
-| Qwen3-1.7B Q4_K_M | | | | |
-| Qwen3-1.7B Q2_K | | | | |
+| Gemma 3 4B Q4_K_M | | | | |
+| Qwen3-4B Q4_K_M | | | | |
 
 ---
 

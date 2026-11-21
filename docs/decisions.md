@@ -99,7 +99,7 @@
 
 | # | Decision | Options | Needed by |
 |---|---|---|---|
-| 1 | Final model list | 3–4 models from Qwen3 1.7B/4B, Gemma 3 4B, Llama 3.2 3B, SeaLLMs v3 1.5B; optional 7–8B | Dec 7 (chapter 3) |
+| 1 | Final model list | 3–4 models from Qwen3 1.7B/4B, Gemma 3 4B, Llama 3.2 3B, SeaLLMs v3 1.5B; optional 7–8B. **Proposed selection rule (Lab 1, 2026-11-22):** keep a model only if its Belebele Cebuano accuracy at Q8_0 is clearly above chance (25%; exact margin `TBD`), measured in the week-2 proof of concept. Lab 1 hints: Qwen3-1.7B at floor risk; Gemma 3 4B strongest | Dec 7 (chapter 3) |
 | 2 | Prompt instruction language | English vs. Cebuano | Dec 7 |
 | 3 | Proposal chapter coverage | VSU format: which chapters are "the proposal" | Nov 23 (ask adviser) |
 | 4 | Linguist | Who; how many hours | Dec 14 |

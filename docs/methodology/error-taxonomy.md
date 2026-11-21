@@ -47,6 +47,20 @@ No external SRC member is required by the department; the linguist strengthens v
 | Instruction failure | No letter, extra text, wrong format |
 | Right reasoning, wrong letter | Reason correct, letter mismatched |
 
+**Added from Lab 1 (2026-11-22; seen in free writing, to test on the real outputs):**
+
+| Category | Example from Lab 1 |
+|---|---|
+| Repetition loop / degenerate output | Same phrase repeated until the token limit ("*Pag-susi sa Pag-susi…*") |
+| Other-language intrusion (not Tagalog or English) | *Aquí* (Spanish) inside a Cebuano answer |
+| Meaning inversion | "Preparing is not very important" when the point was the opposite |
+| Wrong word sense / wrong word choice | *bulad* (dried fish) for belongings; pigs or rats listed as pets |
+| Invented word | *nanggagahom*, *natinagpangan* |
+| Lost local knowledge | Philippine agencies (PAGASA) replaced by US ones at Q2_K |
+
+Lab 1 also suggests **capping answer length** in the RQ3 explanation run and preferring models above the floor, or
+many RQ3 outputs will be loops. Source: `../labs/lab-01-run-a-local-model.md`.
+
 ## Logistics
 
 - Prepare a spreadsheet: item ID, language, passage, question, output, gold, auto language-ID flag, Jamir's note, coder 1 label, coder 2 label. Keep model and level in a separate key file until labeling is done.

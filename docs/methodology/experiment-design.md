@@ -44,6 +44,9 @@ The T14 would take 3–5× longer than the times above (estimate). Measure actua
 
 ## Validity checks
 
+- **Floor check before fixing the model list (proposed 2026-11-22):** each candidate's Belebele Cebuano accuracy at Q8_0 must be clearly above chance (25%); a model at floor cannot show compression loss. Run in the week-2 proof of concept. Origin: Lab 1 (`../labs/lab-01-run-a-local-model.md`).
+- **Independent items:** every prompt is sent alone, with no chat history (Lab 1 showed history contaminates answers).
+
 - Reproduce MTEB Cebuano BM25 (0.784) and one FilBench Belebele number before trusting the pipeline.
 - Closed-book condition measures memorization/contamination.
 - Spot-check ~50 retrievals for decoys that accidentally answer the question.
