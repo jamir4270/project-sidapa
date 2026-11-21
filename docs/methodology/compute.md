@@ -75,8 +75,14 @@ after the week-1 `llama-bench` numbers.
 
 | Machine | Backend | Model | pp512 (t/s) | tg128 (t/s) | Peak RAM | Date |
 |---|---|---|---|---|---|---|
-| T14 | CPU | | | | | |
-| T14 | Vulkan | | | | | |
+| T14 | CPU (`ngl 0`; AVX2 "haswell" CPU backend; Vulkan still loaded, so some prompt work may still be offloaded `VERIFY`) | Qwen3-4B Q4_K_M (2.32 GiB, Unsloth file) | 34.81 ± 1.19 | 4.99 ± 0.17 | not recorded | 2026-11-22 |
+| T14 | Vulkan (Vega 7 iGPU), `ngl -1` | Qwen3-4B Q4_K_M (2.32 GiB, Unsloth file) | 39.50 ± 5.31 | 5.85 ± 0.35 | not recorded | 2026-11-22 |
+
+**Reading (estimate):** a Belebele prompt is roughly 200–350 tokens (passage + question + 4 options + instructions;
+`VERIFY` with the real tokenizer), so ~5–9 s per prompt on the T14 with Vulkan, slower than the earlier 3–5 s guess.
+The full grid (~194k prompts) would take ~270–490 laptop hours: cloud confirmed. **Vega iGPU (Vulkan) beats CPU modestly:** ~13% faster reading,
+~17% faster writing, but noisier (±5.3 vs ±1.2). Laptop setting for thesis speed benchmarks: Vulkan, all layers on the iGPU.
+The iGPU shares system RAM (`uma: 1`), so free RAM still limits model size.
 
 ## Cloud habits
 

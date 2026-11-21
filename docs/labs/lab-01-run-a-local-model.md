@@ -251,12 +251,13 @@ native speaker.*
 4. **Method lessons:** one fresh chat per question (runs 1–2 were contaminated by chat history); multiple-choice
    accuracy, not free writing, is the right RQ2 measure for models this weak at writing.
 
-### Benchmark (Step 5) — not run yet
+### Benchmark (Step 5) — first run done
 
 | Benchmark | pp512 (t/s) | tg128 (t/s) | Device (CPU/Vulkan) | Date |
 |---|---|---|---|---|
 | Gemma 3 4B Q4_K_M | | | | |
-| Qwen3-4B Q4_K_M | | | | |
+| Qwen3-4B Q4_K_M | 39.50 ± 5.31 | 5.85 ± 0.35 | Vulkan (Vega 7 iGPU) | 2026-11-22 |
+| Qwen3-4B Q4_K_M, CPU only (`-ngl 0`) | 34.81 ± 1.19 | 4.99 ± 0.17 | CPU | 2026-11-22 |
 
 ---
 

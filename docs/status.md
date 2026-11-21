@@ -24,7 +24,7 @@
 - [ ] Email the FilBench team asking whether anyone is working on Cebuano quantization or calibration.
 - [ ] Check whether the copra title is registered anywhere that needs a change form.
 - [ ] AWS: check credit amount and expiry; request G-instance vCPU quota (on-demand + spot) in ap-southeast-1; set a Budgets alert. Quota approval can take days — do it now.
-- [~] Lab 1 done except Step 5 (`llama-bench` speed test, still to run). Results logged in `labs/lab-01-run-a-local-model.md`. Original task: follow `labs/lab-01-run-a-local-model.md` — install llama.cpp, chat with Qwen3-1.7B at Q4_K_M vs Q2_K in Cebuano/Tagalog/English, run `llama-bench` (learning only; thesis files are self-quantized).
+- [~] Lab 1 done. Step 5: Qwen3-4B Q4_K_M on Vulkan = 39.5 t/s reading, 5.85 t/s writing vs CPU-only 34.8 / 4.99 → Vulkan iGPU modestly faster (in `compute.md`). Lab 1 complete. Results logged in `labs/lab-01-run-a-local-model.md`. Original task: follow `labs/lab-01-run-a-local-model.md` — install llama.cpp, chat with Qwen3-1.7B at Q4_K_M vs Q2_K in Cebuano/Tagalog/English, run `llama-bench` (learning only; thesis files are self-quantized).
 - [x] Add a GitHub remote and push (backup). Done 2026-11-17 → github.com/jamir4270/project-sidapa. Confirm the repo is **private** on GitHub.
 
 ## Waiting on
