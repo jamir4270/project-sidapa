@@ -28,9 +28,6 @@
 - Secondary (H1 search, H3 errors) and exploratory results at 95% CIs, labeled as such.
 - Agreement: kappa or Krippendorff's alpha with bootstrap CI vs. pre-set threshold.
 - Justify not using ANOVA: binary, repeated-measures data (see the methods-not-used table).
-- Panel one-liner: "Descriptive accuracy with 95% clustered bootstrap CIs; four pre-registered confirmatory
-  comparisons using paired bootstrap CIs with Bonferroni correction, including an equivalence test for calibration;
-  everything else exploratory."
 
 ## Compute and Reproducibility
 - From `../methodology/compute.md`; logging; versions; one machine per comparison.
