@@ -47,6 +47,8 @@
   Closes the Nov 17 "no multiple-comparison correction / no headline tests" risk. Updated experiment-design (Statistics
   Steps 0–6, grid, fixed settings), research-questions hypotheses, ch4 outline, primer §14, timeline week 14.
   Thresholds still `TBD` (open decision #8): check the ±3 margin against week-2 pilot CIs.
+  Both Word handouts updated the same day (Explained: hypotheses table, statistics rules table, "Why not ANOVA?" note
+  replacing the known-gap warning, Q&A answers; Pitch Guide: Q5 answer, Q16 on statistical treatment, prompt total ~205k, method row).
 
 - 2026-11-22 — **Laptop speed benchmark dropped from the methodology** (specific objective 5 removed). "Offline" is motivation,
   backed by literature (4 candidate citations added to `literature/sources.md`, all `VERIFY`); file size per level goes in
