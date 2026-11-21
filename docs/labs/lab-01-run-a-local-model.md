@@ -171,8 +171,8 @@ the question?
 
 ## Step 5 — Measure your laptop's speed
 
-**What you're doing:** running llama.cpp's built-in benchmark. The study is about offline use on resource-constrained
-devices, so the methodology includes real speed and memory numbers from an ordinary laptop: yours.
+**What you're doing:** running llama.cpp's built-in benchmark. This is for your own understanding of how fast these
+models run on an ordinary laptop. (Since 2026-11-22 it is not part of the thesis methodology.)
 
 First find where llama.cpp saved the downloaded models. They're usually in
 `C:\Users\Admin\AppData\Local\llama.cpp\` (`VERIFY` on your machine). Look for a file ending in `Q4_K_M.gguf`.

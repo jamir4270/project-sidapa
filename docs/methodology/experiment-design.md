@@ -10,9 +10,8 @@
 | RQ2 extra tasks | SIB-200 (99), Tatoeba (500-pair sample), FLORES+ perplexity (one model) | Small | A few hours |
 | RQ1 search | Reproduce MTEB (BM25, multilingual-e5-large-instruct) for ceb/tgl/eng; then + decoys (500 / 2,000 / 10,000), affix-stripping BM25, BGE-M3, Qwen3-Embedding-0.6B, hybrid | ~20 runs | Minutes each (CPU); large embedders in cloud |
 | RQ3 explanation run | 200 Cebuano Qs with a short reason before the answer, at Q8 and Q2 | ~1,600 prompts | A few hours |
-| Speed benchmark | `llama-bench` per model × level on the T14 | — | ~1 h |
 
-The T14 would take 3–5× longer than the times above (estimate). Measure actual speed in week 1.
+The T14 would take ~5–9 s per prompt (from Lab 1's measured speed; estimate), so the grid runs on AWS.
 
 ## Fixed settings (decide once; record in chapter 3)
 
@@ -32,7 +31,7 @@ The T14 would take 3–5× longer than the times above (estimate). Measure actua
 | RQ2/2b | Accuracy (MC); quantization gap = (ceb drop from Q8) − (eng drop from Q8); parse-failure rate |
 | RQ2 extra | SIB-200 accuracy; Tatoeba chrF `VERIFY` metric choice; FLORES+ perplexity |
 | RQ3 | Category counts/shares per level; Cohen's kappa (linguist vs researcher) |
-| Speed | Tokens/s (prompt processing and generation), peak RAM |
+| Size | File size (GB) per model × quantization level, reported next to accuracy |
 
 ## Statistics
 

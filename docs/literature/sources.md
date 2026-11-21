@@ -20,7 +20,18 @@ Tags: `VERIFIED` opened and checked · `VERIFY` secondary or memory · `UNCONFIR
 | Chimoto et al. | "Calibrating Beyond English," arXiv 2601.18306 | Target-language calibration (African languages) | VERIFY |
 | Community imatrix test | Reddit r/LocalLLaMA, English vs Norwegian vs Malayalam imatrix | No significant difference | VERIFY (forum; cite cautiously) |
 
-## RQ3 error taxonomy (added 2026-11-20; found by search, not yet opened)
+## Offline / on-device motivation (added 2026-11-22; found by search, not yet opened)
+
+*"Offline" is the study's motivation, not a tested claim. Cite these for "small compressed models run on ordinary/edge hardware."*
+
+| Short name | Citation / link | What it gives us | Tag |
+|---|---|---|---|
+| AWQ | Lin et al., "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration," MLSys 2024 (Best Paper). https://proceedings.mlsys.org/paper_files/paper/2024/hash/42a452cbafa9dd64e9ba4aa95cc1ef21-Abstract-Conference.html · arXiv 2306.00978 | Quantization explicitly motivated by on-device use; reports runs on desktop/mobile GPUs, laptops, Raspberry Pi | VERIFY |
+| On-device LM review | Xu et al., "On-Device Language Models: A Comprehensive Review," arXiv 2409.00088 (2024) | Survey: compression and deployment of LMs on edge devices | VERIFY (preprint) |
+| MobileLLM | Liu et al., "MobileLLM: Optimizing Sub-billion Parameter Language Models for On-Device Use Cases," ICML 2024, PMLR 235:32431–32454. https://proceedings.mlr.press/v235/liu24ce.html | Peer-reviewed case for small models on devices | VERIFY |
+| llama.cpp | ggml-org/llama.cpp, https://github.com/ggml-org/llama.cpp (cite as software, with the commit used) | Stated aim: LLM inference with minimal setup on a wide range of local hardware | VERIFY (only mirrors seen; check the live README) |
+| Local-LLM community | e.g., r/LocalLLaMA | Illustrates real-world practice only; grey literature, never the sole support | — |
+ (added 2026-11-20; found by search, not yet opened)
 
 | Short name | Citation / link | What it gives us | Tag |
 |---|---|---|---|

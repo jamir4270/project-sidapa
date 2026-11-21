@@ -19,7 +19,7 @@
 - [ ] ~~Ask the department about borrowing the GPU~~ Low priority: department PC is now last-resort backup only (liability risk).
 - [ ] Ask VSU language faculty whether a Cebuano linguist can verify the error taxonomy. Also find a second Cebuano-speaking coder for RQ3 (see revised protocol).
 - [ ] Laptop: check Task Manager → Memory → "Slots used"; set the page file to System managed.
-- [ ] Install llama.cpp; run `llama-bench` on one 4B model, CPU vs Vulkan; record numbers in `methodology/compute.md`.
+- [x] Install llama.cpp; `llama-bench` CPU vs Vulkan (done in Lab 1; learning record only).
 - [ ] Get the CebQA chapter (venue, year, CebQuAD size, license).
 - [ ] Email the FilBench team asking whether anyone is working on Cebuano quantization or calibration.
 - [ ] Check whether the copra title is registered anywhere that needs a change form.
@@ -40,6 +40,11 @@
 - **Floor effect (Lab 1, 2026-11-22):** Qwen3-1.7B loops in Tagalog/Cebuano even at Q8_0. If a model scores near chance on Belebele Cebuano, it can't show compression loss. Week-2 proof of concept must run the Q8_0 floor check per candidate (proposed rule in `decisions.md`, open decision #1).
 
 ## Recent changes
+
+- 2026-11-22 — **Laptop speed benchmark dropped from the methodology** (specific objective 5 removed). "Offline" is motivation,
+  backed by literature (4 candidate citations added to `literature/sources.md`, all `VERIFY`); file size per level goes in
+  the results table. All four RQs run on AWS. Updated decisions, research-questions, experiment-design, compute, AGENTS,
+  at-a-glance, primer, timeline, experiments README, lab 1, ch1 outline, both Word handouts. Lab 1 stays as a learning record.
 
 - 2026-11-22 — Framing changed to **offline / resource-constrained use** (logged in `decisions.md`); new title decided: "Search and Shrink: Quantization and
   Calibration Losses for Cebuano, Tagalog and English in Small Offline Language Models" (updated in AGENTS.md, README,

@@ -101,7 +101,7 @@ Full detail: `docs/literature/novelty-check.md`.
 
 | Machine | Use | Notes |
 |---|---|---|
-| Lenovo ThinkPad T14 Gen 1 — Ryzen 7 PRO 4750U (Zen 2), Vega 7 iGPU, 16GB DDR4 (≈6GB free under Windows), 256GB SSD | Code, debugging on small samples, search experiments (CPU), speed/memory benchmarks | Expect ~5–9 s per Belebele prompt for a 4B model (estimate from measured speed). Measured 2026-11-22: Vega iGPU via Vulkan ~13–17% faster than CPU (Qwen3-4B Q4_K_M: 39.5 t/s reading, 5.9 t/s writing); ROCm unsupported; no NPU. Up to 4B models comfortably. |
+| Lenovo ThinkPad T14 Gen 1 — Ryzen 7 PRO 4750U (Zen 2), Vega 7 iGPU, 16GB DDR4 (≈6GB free under Windows), 256GB SSD | Code, debugging on small samples, small search tests (no thesis benchmark; dropped 2026-11-22) | Expect ~5–9 s per Belebele prompt for a 4B model (estimate from measured speed). Measured 2026-11-22: Vega iGPU via Vulkan ~13–17% faster than CPU (Qwen3-4B Q4_K_M: 39.5 t/s reading, 5.9 t/s writing); ROCm unsupported; no NPU. Up to 4B models comfortably. |
 | AWS EC2 `g4dn.xlarge` (T4 16 GB), ap-southeast-1, paid from credits | Main compute for the full grid (decided 2026-11-21; replaces Colab Pro) | Spot for unattended runs; one instance type for every comparison; budget alert on. |
 | Kaggle (free) | Pilots, backup, building calibration files | ~30 GPU-h/week, 12-h sessions (VERIFY current quota) |
 | Department GPU | Fastest option if borrowable | Borrowing rules TBD |

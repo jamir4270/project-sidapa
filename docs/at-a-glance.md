@@ -15,7 +15,7 @@ than English; for Cebuano, nobody has measured by how much on real tasks (to our
 | Core question | How much accuracy does Cebuano lose at each compression level, vs. English and Tagalog? |
 | Most original part | Does "tuning" the compression with Cebuano text protect Cebuano? |
 | Data | Public datasets only. No fieldwork. |
-| Compute | Laptop for coding and speed tests; AWS GPU instance (paid from credits) for the big runs |
+| Compute | Laptop for coding and small tests; AWS GPU instance (paid from credits) for all experiments |
 | Next big date | Proposal defense, Friday Dec 18, 2026 |
 | Final defense | Mid to late May 2027 |
 

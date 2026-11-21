@@ -1,7 +1,7 @@
 # Chapter I — Introduction (outline)
 
 ## Background of the Study
-- Offline AI for Philippine communities; small models must be compressed to run on cheap hardware.
+- Offline AI for Philippine communities; small models must be compressed to run on cheap hardware. Cite as motivation (not tested): AWQ (MLSys 2024), Xu et al. 2024 on-device review, MobileLLM (ICML 2024), llama.cpp — see `../literature/sources.md` `VERIFY`.
 - Cebuano: ~20M speakers `VERIFY`; low-resource despite a huge, mostly bot-written Wikipedia (arXiv 2411.05527) `VERIFIED`.
 - Question-answering AI (RAG): search, then read.
 - Quantization damage is uneven across languages (Marchisio et al. 2024; Marie & Fujita 2025) `VERIFIED`.

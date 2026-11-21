@@ -5,7 +5,7 @@
 
 ## Machines
 
-**Priority (decided 2026-11-21):** 1. AWS → 2. Kaggle / Colab → 3. department research PC (last resort: Jamir would be liable for the machine). Laptop for development and speed benchmarks throughout. Never mix machines inside one comparison.
+**Priority (decided 2026-11-21):** 1. AWS → 2. Kaggle / Colab → 3. department research PC (last resort: Jamir would be liable for the machine). Laptop for development and small tests throughout (no laptop benchmark in the thesis since 2026-11-22). Never mix machines inside one comparison.
 
 | Machine | Role | Notes |
 |---|---|---|
@@ -71,7 +71,7 @@ after the week-1 `llama-bench` numbers.
 - [ ] Close the browser during runs.
 - [ ] Convert full-size models and build imatrix files in the cloud (needs ~8GB+ RAM for 4B).
 
-## Measured numbers (fill in week 1)
+## Measured numbers (Lab 1 learning record, not thesis data)
 
 | Machine | Backend | Model | pp512 (t/s) | tg128 (t/s) | Peak RAM | Date |
 |---|---|---|---|---|---|---|
@@ -81,7 +81,7 @@ after the week-1 `llama-bench` numbers.
 **Reading (estimate):** a Belebele prompt is roughly 200–350 tokens (passage + question + 4 options + instructions;
 `VERIFY` with the real tokenizer), so ~5–9 s per prompt on the T14 with Vulkan, slower than the earlier 3–5 s guess.
 The full grid (~194k prompts) would take ~270–490 laptop hours: cloud confirmed. **Vega iGPU (Vulkan) beats CPU modestly:** ~13% faster reading,
-~17% faster writing, but noisier (±5.3 vs ±1.2). Laptop setting for thesis speed benchmarks: Vulkan, all layers on the iGPU.
+~17% faster writing, but noisier (±5.3 vs ±1.2). Learning record only (Lab 1); not thesis data since 2026-11-22.
 The iGPU shares system RAM (`uma: 1`), so free RAM still limits model size.
 
 ## Cloud habits

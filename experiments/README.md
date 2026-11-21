@@ -16,7 +16,7 @@ experiments/
 │   ├── quant/               # scripts wrapping convert / llama-quantize / llama-imatrix
 │   ├── analysis/            # bootstrap CIs, paired tests, quantization gap, figures
 │   └── utils/               # logging, checksums, resumable runner
-├── scripts/                 # entry points: run_rq1.py, run_rq2.py, run_rq2b.py, bench_speed.sh
+├── scripts/                 # entry points: run_rq1.py, run_rq2.py, run_rq2b.py
 ├── notebooks/               # Kaggle/Colab notebooks that call scripts (no logic inside notebooks)
 └── results/
     ├── raw/                 # per-item JSONL (git-ignored; copy to private storage)
@@ -37,5 +37,5 @@ experiments/
 
 ## First milestones
 
-- [ ] Week 1: `bench_speed.sh` on the T14 (CPU vs Vulkan).
+- [x] ~~Week 1: speed benchmark on the T14~~ Done by hand in Lab 1; dropped from the thesis (2026-11-22).
 - [ ] Week 2: `run_rq1.py --reproduce-mteb` (BM25 + e5 on ceb/tgl/eng); `run_rq2.py` pilot (1 model × Q8/Q4/Q2 × 100 Qs × 3 languages).

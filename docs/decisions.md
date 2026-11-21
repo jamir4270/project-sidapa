@@ -4,6 +4,16 @@
 
 ## Decisions
 
+### 2026-11-22 — Drop the laptop speed benchmark from the methodology; "offline" is motivation, backed by literature
+- **Decision:** Remove specific objective 5 (speed and memory per quantization level on the T14). "Offline" stays as the
+  study's **motivation** (why models are compressed), supported by verified citations in chapters 1–2, not a claim the
+  study tests. Report **file size per quantization level** in the main results table (it comes free from the AWS runs).
+  Lab 1 benchmarks stay in `labs/` and `compute.md` as learning records, not thesis data. All four RQs run on AWS.
+- **Reason:** No RQ needs the laptop; accuracy doesn't depend on the machine. One device can't support general speed
+  claims. File size is device-independent and is the stronger evidence of offline fit. Keeps the study lean.
+- **Supersedes:** the laptop-benchmark part of the 2026-11-22 framing entry below.
+- **By:** Jamir, on Claude's recommendation.
+
 ### 2026-11-22 — New working title
 - **Decision:** "Search and Shrink: Quantization and Calibration Losses for Cebuano, Tagalog and English in Small
   Offline Language Models." Replaces "…Measuring Retrieval and Quantization Losses in a Small Cebuano
@@ -15,7 +25,7 @@
 ### 2026-11-22 — Frame the study around offline, resource-constrained use (not "consumer hardware")
 - **Decision:** Motivation and title say **offline / resource-constrained devices** (old laptops, cheap PCs, phones)
   instead of "consumer hardware." The T14 speed and memory benchmark per quantization level stays as a small
-  supporting objective (specific objective 5), not a research question.
+  supporting objective (specific objective 5), not a research question. *(Benchmark part superseded the same day: dropped; see above.)*
 - **Reason:** Compression only matters because models must fit small, offline devices; "offline / resource-constrained"
   keeps that reason without tying claims to one device class. Accuracy results don't depend on the machine, so cloud
   runs don't conflict. The laptop benchmark gives developers a practical accuracy–size–speed table at low cost.
@@ -43,8 +53,8 @@
   (1× NVIDIA T4, 16 GB) in **ap-southeast-1 (Singapore)**: spot for unattended grid runs, on-demand for short
   debugging. **All RQ2/RQ2b comparisons run on this one instance type.** Services: EC2, EBS (only while working),
   private S3 bucket (calibration text, imatrix files, results), IAM (non-root user), AWS Budgets (alerts), Service Quotas
-  (GPU quota). Backups: see the priority-order entry above; never mix machines inside one comparison. Speed benchmarks
-  stay on the T14 (the offline / resource-constrained framing). Colab Pro is dropped.
+  (GPU quota). Backups: see the priority-order entry above; never mix machines inside one comparison. No laptop speed
+  benchmark in the thesis (dropped 2026-11-22). Colab Pro is dropped.
 - **Reason:** Jamir has AWS credits. AWS gives a fixed, chosen GPU type every run (Colab assigns GPUs per session, which
   threatens "one machine per comparison"), no session caps for hands-off January runs, one storage place, and
   job-relevant cloud skills. Cost estimate ~$30–40 spot / ~$75–100 on-demand compute for ~100–135 GPU-h, plus

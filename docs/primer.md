@@ -217,7 +217,7 @@ Small test sets make scores wobbly. Rules (after [Miller 2024, "Adding Error Bar
 
 ## 15. Compute
 
-Your T14 is for code, small runs, search experiments and speed benchmarks. The full grid runs on **AWS EC2 `g4dn.xlarge`**
+Your T14 is for code and small test runs. The full grid runs on **AWS EC2 `g4dn.xlarge`**
 (one T4 GPU, paid from credits; decided 2026-11-21) with **Kaggle** as free backup; the department GPU if borrowable. Hardware changes speed, not results,
 as long as each comparison runs entirely on one machine type. Full detail: `methodology/compute.md`.
 
@@ -258,7 +258,7 @@ as long as each comparison runs entirely on one machine type. Full detail: `meth
 | Filipino rows in Marie & Fujita's released data | `VERIFY` |
 | Whether Waskito et al. had an earlier arXiv preprint | `VERIFY` |
 | arXiv 2505.20276 ("4-bit hurts non-English more") | `UNCONFIRMED` — couldn't open; don't cite |
-| Laptop speeds (3–5 s/prompt) and cloud run times | Estimates; measure in week 1 |
+| Cloud run times | Estimates; measure in the proof of concept (laptop measured in Lab 1: ~5–9 s/prompt) |
 | Kaggle quota, AWS instance prices, RunPod prices | `VERIFY` at time of use |
 | Cebuano speaker count (~20 million) | `VERIFY` |
 

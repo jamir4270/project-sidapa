@@ -38,10 +38,9 @@ A falsified hypothesis is still a result. Report it with its interval.
 ## Specific objectives (chapter 1 wording draft)
 
 1. To reproduce published Cebuano, Tagalog and English search baselines and measure search accuracy on a corpus extended with real distractor passages.
-2. To measure multiple-choice accuracy of small open-weight models across five GGUF quantization levels in Cebuano, Tagalog and English, with gold, retrieved and no passages.
+2. To measure multiple-choice accuracy of small open-weight models across five GGUF quantization levels in Cebuano, Tagalog and English, with gold, retrieved and no passages, reporting each level's file size.
 3. To compare English, Cebuano and Tagalog importance-matrix calibration at low-bit quantization.
 4. To develop and validate, with a Cebuano linguist, a taxonomy of model errors in Cebuano, and relate error categories to quantization level.
-5. To measure inference speed and memory of each quantization level on a 2020-era consumer laptop.
 
 ## Scope and limitations (draft)
 
