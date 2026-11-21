@@ -2,7 +2,7 @@
 
 *Update at the end of every working session. Newest information at the top of each section.*
 
-**Last updated:** 2026-11-21
+**Last updated:** 2026-11-22
 **Phase:** 1 of 5 — Prepare and propose (Nov 17 → Dec 18)
 **Next milestone:** Proposal defense, Friday 2026-12-18
 
@@ -40,6 +40,13 @@
 - **Floor effect (Lab 1, 2026-11-22):** Qwen3-1.7B loops in Tagalog/Cebuano even at Q8_0. If a model scores near chance on Belebele Cebuano, it can't show compression loss. Week-2 proof of concept must run the Q8_0 floor check per candidate (proposed rule in `decisions.md`, open decision #1).
 
 ## Recent changes
+
+- 2026-11-22 — **Data analysis procedure adopted** (logged in `decisions.md`): paired clustered bootstrap for everything;
+  four confirmatory claims (C1–C3 quantization gap at Q4_K_M/Q3_K_M/Q2_K, C4 calibration at Q2_K with equivalence
+  margin), Bonferroni 98.75% CIs; H1/H3 secondary; rest exploratory; 3 calibration seeds (+~10,800 prompts, estimate).
+  Closes the Nov 17 "no multiple-comparison correction / no headline tests" risk. Updated experiment-design (Statistics
+  Steps 0–6, grid, fixed settings), research-questions hypotheses, ch4 outline, primer §14, timeline week 14.
+  Thresholds still `TBD` (open decision #8): check the ±3 margin against week-2 pilot CIs.
 
 - 2026-11-22 — **Laptop speed benchmark dropped from the methodology** (specific objective 5 removed). "Offline" is motivation,
   backed by literature (4 candidate citations added to `literature/sources.md`, all `VERIFY`); file size per level goes in
@@ -79,8 +86,8 @@
   primer imatrix default (llama.cpp uses none by default, `VERIFY`), at-a-glance hypothesis softened, grid-size math
   added to `methodology/compute.md` (≈194k prompts; laptop can't run it). `git init` + first local commit, then pushed to GitHub `origin/main`.
 - 2026-11-19 — Added `.claude/settings.json` so Claude is not listed as a co-author on commits or PRs.
-- Open risks flagged, not yet acted on: Qwen3 thinking mode must be disabled and logged; statistics plan has no
-  multiple-comparison correction or pre-declared headline tests; check that Leipzig calibration text is news, not
+- Open risks flagged, not yet acted on: Qwen3 thinking mode must be disabled and logged; ~~statistics plan has no
+  multiple-comparison correction or pre-declared headline tests~~ (fixed 2026-11-22); check that Leipzig calibration text is news, not
   bot-written Wikipedia; re-check for newer small models before fixing the model list (Dec 7).
 
 - 2026-11-17 — Workspace created. RQs reframed after novelty check: compression (RQ2) and calibration (RQ2b) are the core; search (RQ1) is supporting.

@@ -20,7 +20,17 @@
 - From `../methodology/error-taxonomy.md`.
 
 ## Statistical Analysis
-- Clustered bootstrap CIs; paired tests; quantization gap; decision rule.
+- Full procedure: `../methodology/experiment-design.md` → Statistics (Steps 0–6).
+- Descriptive: accuracy (mean of 0/1 scores) ± 95% CI per model × level × language; file size; accuracy-vs-level figure.
+- Inferential: paired clustered bootstrap (10,000 passage resamples) for every CI and comparison.
+- Four pre-registered confirmatory claims (C1–C3 quantization gap at Q4_K_M/Q3_K_M/Q2_K; C4 calibration at Q2_K),
+  Bonferroni-corrected (98.75% CIs); C4 includes an equivalence margin (`TBD`).
+- Secondary (H1 search, H3 errors) and exploratory results at 95% CIs, labeled as such.
+- Agreement: kappa or Krippendorff's alpha with bootstrap CI vs. pre-set threshold.
+- Justify not using ANOVA: binary, repeated-measures data (see the methods-not-used table).
+- Panel one-liner: "Descriptive accuracy with 95% clustered bootstrap CIs; four pre-registered confirmatory
+  comparisons using paired bootstrap CIs with Bonferroni correction, including an equivalence test for calibration;
+  everything else exploratory."
 
 ## Compute and Reproducibility
 - From `../methodology/compute.md`; logging; versions; one machine per comparison.

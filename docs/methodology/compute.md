@@ -57,7 +57,8 @@ a NAT gateway; no SageMaker notebooks; Singapore costs ~40% more than us-east-1 
 | RQ2, gold passage | 4 models × 5 levels × 3 languages × 900 | 54,000 |
 | RQ2, + retrieved and no-passage conditions | × 3 conditions | 162,000 |
 | RQ2b, new calibrated files only | 2 models × 2 levels × 3 imatrices (Eng/Ceb/Tgl) × 3 languages × 900 | 32,400 |
-| **Total** | | **≈194,000** |
+| RQ2b, extra calibration seeds (added 2026-11-22) | 2 models × Q2_K × 3 imatrices × 2 extra seeds × Cebuano × 900 | 10,800 |
+| **Total** | | **≈205,000** |
 
 At 3–5 s per prompt (estimate) that is ≈160–270 laptop hours, i.e. 7–11 days non-stop, before retries
 (retrieved-passage prompts are longer, so likely more). The "no imatrix" arm of RQ2b reuses the RQ2 files.

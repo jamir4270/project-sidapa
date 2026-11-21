@@ -30,7 +30,7 @@
 | 11 | Jan 25–31 | RQ1: search on the big library (BM25, e5, BGE-M3, affix BM25, hybrid); library-size curve | Search table + curve | [ ] |
 | 12 | Feb 1–7 | RQ2 conditions (retrieved, none); SIB-200, Tatoeba, FLORES perplexity | Conditions table | [ ] |
 | 13 | Feb 8–14 | **Buffer**; delete AWS disks/instances if done (S3 results kept) | All runs complete | [ ] |
-| 14 | Feb 15–21 | Statistics: CIs, paired tests, quantization gap; first figures | Results with error bars | [ ] |
+| 14 | Feb 15–21 | Statistics: one bootstrap script, C1–C4 confirmatory + secondary/exploratory CIs; first figures | Results with error bars | [ ] |
 | 15 | Feb 22–28 | RQ3: explanation run; collect 200–300 wrong outputs; first-pass notes; send to linguist | Sample sent | [ ] |
 | 16 | Mar 1–7 | Linguist finalizes codebook | Codebook | [ ] |
 | 17 | Mar 8–14 | Linguist labels; you label same 100 blind; kappa | Labels + kappa | [ ] |

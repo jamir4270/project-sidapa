@@ -4,6 +4,21 @@
 
 ## Decisions
 
+### 2026-11-22 — Data analysis procedure: paired clustered bootstrap, four confirmatory claims
+- **Decision:** One inferential method for all RQs: the paired clustered bootstrap (10,000 passage resamples, same
+  resamples for every condition). Only four pre-registered confirmatory claims: C1–C3 = quantization gap (Cebuano drop
+  − English drop) at Q4_K_M, Q3_K_M, Q2_K; C4 = Cebuano-calibrated − English-calibrated Cebuano accuracy at Q2_K, with a
+  three-way outcome (helps / equivalent within ±margin / inconclusive). Pooled across models; Bonferroni → 98.75% CIs.
+  H1 (search) and H3 (errors) are secondary at 95%; everything else exploratory. 3 calibration seeds per language
+  (seeds 2–3 at Q2_K, Cebuano test only: ~10,800 extra prompts, ~3 h, estimate). ANOVA, GLMM, McNemar, Cochran's Q,
+  Wilcoxon and chi-square not used (GLMM optional robustness check). Detail: `methodology/experiment-design.md`.
+- **Reason:** Scores are binary and items repeat, so ANOVA doesn't fit; one method is less to code, explain and get
+  wrong; a small confirmatory family controls false positives; the equivalence outcome makes a likely null RQ2b
+  result defensible; seeds separate "calibration language" from "lucky sample".
+- **Still open:** equivalence margin (proposed ±3 points), agreement threshold (proposed 0.6), parse-failure flag
+  (proposed 5%) — open decision #8; lock before Jan 4.
+- **By:** Jamir, on Claude's recommendation.
+
 ### 2026-11-22 — Drop the laptop speed benchmark from the methodology; "offline" is motivation, backed by literature
 - **Decision:** Remove specific objective 5 (speed and memory per quantization level on the T14). "Offline" stays as the
   study's **motivation** (why models are compressed), supported by verified citations in chapters 1–2, not a claim the
@@ -115,4 +130,5 @@
 | 4 | Linguist | Who; how many hours | Dec 14 |
 | 5 | Main compute | **Decided 2026-11-21:** AWS → Kaggle/Colab → dept PC (see above). Still open: credit expiry, GPU quota | Dec 18 |
 | 6 | CebQuAD | Include if license allows; drop otherwise | Dec 7 |
+| 8 | Statistics thresholds: equivalence margin (proposed ±3 points; must exceed pilot CI half-width), agreement threshold (proposed 0.6), parse-failure flag (proposed 5%) | Accept / adjust after week-2 pilot | Jan 4 (before runs) |
 | 7 | RQ3 protocol revision (2026-11-20 brief): automatic language ID, published typologies, pilot, two blind coders, pre-set alpha threshold; who is the second coder | Adopt / adopt partly / keep original | Dec 7 (chapter 3) |

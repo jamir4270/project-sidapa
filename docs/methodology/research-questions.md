@@ -28,12 +28,12 @@ compression increases? (Categories finalized and verified by a Cebuano linguist;
 
 | ID | Hypothesis | Falsified if |
 |---|---|---|
-| H1 | Cebuano search accuracy falls more than English as decoys are added | Cebuano–English gap interval includes zero at 10,000 decoys |
-| H2 | The quantization gap (Cebuano drop − English drop) is positive at Q4_K_M and below | Gap interval includes zero at every level |
-| H2b | Cebuano calibration yields higher Cebuano accuracy than English calibration at Q2_K | Paired difference interval includes zero |
-| H3 | Language-switching and morphology errors grow with compression | Category shares don't change across levels |
+| H1 (secondary) | Cebuano search accuracy falls more than English as decoys are added | 95% CI of the Cebuano–English nDCG@10 drop gap includes zero at 10,000 decoys |
+| H2 (confirmatory C1–C3) | The quantization gap (Cebuano drop − English drop) is positive at Q4_K_M and below | 98.75% CI of the gap includes zero at Q4_K_M, Q3_K_M and Q2_K (tested separately) |
+| H2b (confirmatory C4) | Cebuano calibration yields higher Cebuano accuracy than English calibration at Q2_K | 98.75% CI includes zero; if it lies entirely inside ±margin (`TBD`, proposed 3 points), report "equivalent" |
+| H3 (secondary) | Language-switching and morphology errors grow with compression | 95% CI of the Q2 − Q8 share difference includes zero for those categories |
 
-A falsified hypothesis is still a result. Report it with its interval.
+A falsified hypothesis is still a result. Report it with its interval. Full analysis procedure: `experiment-design.md` → Statistics.
 
 ## Specific objectives (chapter 1 wording draft)
 

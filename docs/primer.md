@@ -214,6 +214,9 @@ Small test sets make scores wobbly. Rules (after [Miller 2024, "Adding Error Bar
 - **Paired** comparisons when two settings answer the same questions.
 - Don't claim a difference whose interval includes zero.
 - Lean on Belebele (900 items) for main claims, not SIB-200 (99 items).
+- Only **four** pre-declared claims are "tested" (quantization gap at Q4_K_M, Q3_K_M, Q2_K; calibration at Q2_K), with
+  a Bonferroni correction (98.75% intervals). Everything else is description. For calibration, an interval that sits
+  inside ±3 points (`TBD`) means "no meaningful effect", a real result. Full procedure: `methodology/experiment-design.md`.
 
 ## 15. Compute
 
