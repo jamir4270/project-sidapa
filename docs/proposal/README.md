@@ -1,5 +1,7 @@
 # Proposal Chapters
 
+**Working title:** Search and Shrink: Quantization and Calibration Losses for Cebuano, Tagalog and English in Small Offline Language Models
+
 Drafts for the **Dec 18, 2026** proposal defense, written in Markdown and exported to the VSU template at the end.
 
 ## Chapter structure

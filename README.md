@@ -1,5 +1,7 @@
 # Search and Shrink — Cebuano Thesis Workspace
 
+**Working title:** Search and Shrink: Quantization and Calibration Losses for Cebuano, Tagalog and English in Small Offline Language Models
+
 BS Computer Science thesis, Visayas State University. Researcher: Jamir Oasis M. Andrade.
 
 **What it is:** a measurement study of how much small AI models lose in Cebuano when compressed to run

@@ -24,7 +24,7 @@
 - [ ] Email the FilBench team asking whether anyone is working on Cebuano quantization or calibration.
 - [ ] Check whether the copra title is registered anywhere that needs a change form.
 - [ ] AWS: check credit amount and expiry; request G-instance vCPU quota (on-demand + spot) in ap-southeast-1; set a Budgets alert. Quota approval can take days — do it now.
-- [ ] Lab 1 (hands-on): install llama.cpp, chat with Qwen3-1.7B at Q4_K_M vs Q2_K in Cebuano/Tagalog/English (learning only; thesis files are self-quantized).
+- [ ] Lab 1 (hands-on): follow `labs/lab-01-run-a-local-model.md` — install llama.cpp, chat with Qwen3-1.7B at Q4_K_M vs Q2_K in Cebuano/Tagalog/English, run `llama-bench` (learning only; thesis files are self-quantized).
 - [x] Add a GitHub remote and push (backup). Done 2026-11-17 → github.com/jamir4270/project-sidapa. Confirm the repo is **private** on GitHub.
 
 ## Waiting on
@@ -39,6 +39,13 @@
 - **Time:** five weeks to the proposal defense. Protect the week-2 proof of concept.
 
 ## Recent changes
+
+- 2026-11-22 — Framing changed to **offline / resource-constrained use** (logged in `decisions.md`); new title decided: "Search and Shrink: Quantization and
+  Calibration Losses for Cebuano, Tagalog and English in Small Offline Language Models" (updated in AGENTS.md, README,
+  at-a-glance, proposal README, research-questions, lab 1, both Word handouts). Lab 1 run: Qwen3-1.7B (Q4, Q8), Qwen3-4B (Q4), Gemma 3 4B (Q4, Q2). Informal findings:
+  Qwen3-1.7B loops in Tagalog/Cebuano even at Q8 (floor-effect risk); Gemma 3 4B strongest; Gemma Q2 collapses in
+  Cebuano first, then Tagalog, while English survives (lost Philippine-specific knowledge). Lab notes and the model-selection
+  rule not yet logged.
 
 - 2026-11-21 — **NCRC-V task finished; copra study dropped.** Topic switch is final. Adviser has no say on the topic
   before the proposal (their say is at the defense), so no approval step. Updated AGENTS.md, decisions, copra note,

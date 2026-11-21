@@ -2,6 +2,8 @@
 
 *The 5-minute version. For depth, read `primer.md`.*
 
+**Working title:** Search and Shrink: Quantization and Calibration Losses for Cebuano, Tagalog and English in Small Offline Language Models
+
 ## In 30 seconds
 
 You're measuring how much a small, **compressed** AI model gets worse at Cebuano, and whether you can win some of

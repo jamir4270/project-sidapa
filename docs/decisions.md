@@ -4,6 +4,24 @@
 
 ## Decisions
 
+### 2026-11-22 — New working title
+- **Decision:** "Search and Shrink: Quantization and Calibration Losses for Cebuano, Tagalog and English in Small
+  Offline Language Models." Replaces "…Measuring Retrieval and Quantization Losses in a Small Cebuano
+  Question-Answering Pipeline on Consumer Hardware."
+- **Reason:** Leads with the core contribution (RQ2 quantization + RQ2b calibration), names all three languages, and
+  uses the offline framing. Search (RQ1) is supporting and introduced in chapter 1.
+- **By:** Jamir (option 3 of three drafted).
+
+### 2026-11-22 — Frame the study around offline, resource-constrained use (not "consumer hardware")
+- **Decision:** Motivation and title say **offline / resource-constrained devices** (old laptops, cheap PCs, phones)
+  instead of "consumer hardware." The T14 speed and memory benchmark per quantization level stays as a small
+  supporting objective (specific objective 5), not a research question.
+- **Reason:** Compression only matters because models must fit small, offline devices; "offline / resource-constrained"
+  keeps that reason without tying claims to one device class. Accuracy results don't depend on the machine, so cloud
+  runs don't conflict. The laptop benchmark gives developers a practical accuracy–size–speed table at low cost.
+- **Title:** decided the same day (see the entry above).
+- **By:** Jamir, on Claude's recommendation.
+
 ### 2026-11-21 — Copra study dropped; Search and Shrink is the thesis
 - **Decision:** NCRC-V reality check completed; Jamir is not pursuing the copra study. "Search and Shrink" is the thesis
   topic for the Dec 18 proposal defense.
@@ -26,7 +44,7 @@
   debugging. **All RQ2/RQ2b comparisons run on this one instance type.** Services: EC2, EBS (only while working),
   private S3 bucket (calibration text, imatrix files, results), IAM (non-root user), AWS Budgets (alerts), Service Quotas
   (GPU quota). Backups: see the priority-order entry above; never mix machines inside one comparison. Speed benchmarks
-  stay on the T14 (the consumer-hardware claim). Colab Pro is dropped.
+  stay on the T14 (the offline / resource-constrained framing). Colab Pro is dropped.
 - **Reason:** Jamir has AWS credits. AWS gives a fixed, chosen GPU type every run (Colab assigns GPUs per session, which
   threatens "one machine per comparison"), no session caps for hands-off January runs, one storage place, and
   job-relevant cloud skills. Cost estimate ~$30–40 spot / ~$75–100 on-demand compute for ~100–135 GPU-h, plus

@@ -5,7 +5,7 @@
 ## General objective
 
 To measure how much accuracy small, open-weight language models lose in Cebuano, relative to Tagalog and English,
-when quantized for offline use on consumer hardware, whether Cebuano-language calibration reduces that loss, and
+when quantized for offline use on resource-constrained devices, whether Cebuano-language calibration reduces that loss, and
 how Cebuano search performs on a realistic corpus within a question-answering pipeline.
 
 ## Research questions

@@ -8,8 +8,8 @@ Read this file fully before doing anything. Then read `docs/status.md`.
 ## 1. The project in one paragraph
 
 An undergraduate BS Computer Science thesis at Visayas State University (VSU), Baybay City, Leyte.
-Working title: **"Search and Shrink: Measuring Retrieval and Quantization Losses in a Small Cebuano
-Question-Answering Pipeline on Consumer Hardware."** The study measures how much accuracy small,
+Working title (decided 2026-11-22): **"Search and Shrink: Quantization and Calibration Losses for Cebuano,
+Tagalog and English in Small Offline Language Models."** The study measures how much accuracy small,
 open-weight language models lose in Cebuano (versus Tagalog and English) when they are compressed
 (quantized) to run offline on cheap hardware, and whether calibrating the compression with Cebuano
 text reduces that loss. A supporting chapter measures Cebuano search (BM25 vs. multilingual embeddings)
@@ -132,6 +132,7 @@ cebuano-thesis/
 │   │   ├── data-and-licensing.md  ← datasets, decoy corpus, copyright
 │   │   ├── error-taxonomy.md      ← RQ3 protocol with the linguist
 │   │   └── compute.md
+│   ├── labs/                  ← hands-on learning labs (e.g. running a local model)
 │   ├── proposal/              ← chapter drafts for the proposal defense
 │   └── meetings/              ← adviser, NCRC-V, linguist meeting notes
 ├── reference/
