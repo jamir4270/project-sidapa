@@ -129,6 +129,7 @@ cebuano-thesis/
 │   ├── methodology/
 │   │   ├── research-questions.md
 │   │   ├── experiment-design.md   ← grid, fixed settings, statistics
+│   │   ├── objectives-and-metrics.md ← each objective's metrics and the tool that produces them
 │   │   ├── data-and-licensing.md  ← datasets, decoy corpus, copyright
 │   │   ├── error-taxonomy.md      ← RQ3 protocol with the linguist
 │   │   └── compute.md

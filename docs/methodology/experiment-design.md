@@ -27,6 +27,8 @@ The T14 would take ~5–9 s per prompt (from Lab 1's measured speed; estimate), 
 
 ## Metrics
 
+Per-objective detail, new exploratory metrics and the tool behind each number: `objectives-and-metrics.md`.
+
 | RQ | Metric |
 |---|---|
 | RQ1 | nDCG@10, Recall@1, Recall@5 (`ranx`) |

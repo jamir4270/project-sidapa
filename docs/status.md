@@ -42,6 +42,10 @@
 
 ## Recent changes
 
+- 2026-11-23 — New `methodology/objectives-and-metrics.md`: the four objectives (plain wording), metrics per objective
+  (planned vs. new exploratory), headline numbers, and which tool produces each (llama.cpp makes/runs models; scoring is
+  our Python). Tool claims tagged `VERIFY`. Linked from AGENTS map and experiment-design; logged in decisions.
+
 - 2026-11-22 — **RQ3 kept, conditional** (logged in `decisions.md`): needs a linguist and/or second Cebuano coder, named
   by Dec 14 (target), confirmed by **Jan 31** (cutoff) or RQ3 falls back to an automatic failure analysis inside RQ2.
   Explanation-run items now sampled from questions that flipped right→wrong (Q8_0→Q2_K). Updated research-questions,

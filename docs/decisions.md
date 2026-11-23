@@ -4,6 +4,15 @@
 
 ## Decisions
 
+### 2026-11-23 — Objectives-and-metrics reference; exploratory metrics added
+- **Decision:** New `methodology/objectives-and-metrics.md` maps each objective to its metrics, headline number and tool.
+  Adds exploratory metrics computed from already-planned data (no extra runs): above-chance retained, letter collapse,
+  flip counts, condition gaps, recovery vs. no calibration, share of loss recovered, cross-language side effect,
+  language-switch rate as a number. Confirmatory tests C1–C4 unchanged.
+- **Reason:** Clear line from each objective to the number that answers it; the extra metrics cost nothing and help
+  interpret the headline results.
+- **By:** Jamir, on Claude's recommendation.
+
 ### 2026-11-22 — Keep RQ3, conditional on finding coders; fallback by Jan 31; sample flipped items
 - **Decision:** RQ3 (error taxonomy) stays, **on condition** that the people it needs are confirmed: a Cebuano linguist,
   a second native-speaker coder, or both. Target to name them: **Dec 14** (open decision #4). **Cutoff: Jan 31, 2027.**
