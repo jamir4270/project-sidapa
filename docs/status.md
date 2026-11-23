@@ -2,7 +2,7 @@
 
 *Update at the end of every working session. Newest information at the top of each section.*
 
-**Last updated:** 2026-11-22
+**Last updated:** 2026-11-23
 **Phase:** 1 of 5 — Prepare and propose (Nov 17 → Dec 18)
 **Next milestone:** Proposal defense, Friday 2026-12-18
 
@@ -46,6 +46,8 @@
   by Dec 14 (target), confirmed by **Jan 31** (cutoff) or RQ3 falls back to an automatic failure analysis inside RQ2.
   Explanation-run items now sampled from questions that flipped right→wrong (Q8_0→Q2_K). Updated research-questions,
   error-taxonomy, experiment-design, open decision #4. (Dropping RQ3 was considered and rejected.)
+  2026-11-23: both Word handouts now say RQ3 is conditional (Explained: sections 5 and 8, flipped-item sampling;
+  Pitch Guide: script, Q10, ask #3 now also asks for a second Cebuano coder, summary row).
 
 - 2026-11-22 — **Data analysis procedure adopted** (logged in `decisions.md`): paired clustered bootstrap for everything;
   four confirmatory claims (C1–C3 quantization gap at Q4_K_M/Q3_K_M/Q2_K, C4 calibration at Q2_K with equivalence
