@@ -14,6 +14,8 @@
 
 ## This week (Nov 17–23)
 
+**From Nov 23 on, the working list is the build checklist in `proposal/README.md`.**
+
 - [x] NCRC-V visit done (2026-11-21). Copra study dropped.
 - [ ] Optional: brief the adviser/instructor with the one-page pitch (no approval needed; useful for chapter-coverage question and linguist referral).
 - [ ] ~~Ask the department about borrowing the GPU~~ Low priority: department PC is now last-resort backup only (liability risk).
@@ -41,6 +43,18 @@
 - **Floor effect (Lab 1, 2026-11-22):** Qwen3-1.7B loops in Tagalog/Cebuano even at Q8_0. If a model scores near chance on Belebele Cebuano, it can't show compression loss. Week-2 proof of concept must run the Q8_0 floor check per candidate (proposed rule in `decisions.md`, open decision #1).
 
 ## Recent changes
+
+- 2026-11-23 — **SRC feedback** (one member, after a verbal pitch with no handout): scope may be too small; novel
+  beyond evaluating pretrained models?; needs focus (too many variables); "weak"; how is calibration valid?
+  Claude's read: wide-but-shallow. Proposed (not decided): shrink RQ1 to a condition inside RQ2, deepen RQ2b
+  (dose curve), and present calibration as the manipulated variable.
+  **Calibration spec drafted, not locked** (D1–D7): D1 same genre for all three languages — Leipzig **news**
+  (ceb newscrawl, tgl news, eng news/newscrawl; Jamir found that eng has no community corpus; years differ);
+  D2 token-matched via equal `--chunks` at `-c 512` (N = 200 proposed, estimate); D3 language-ID cleaning;
+  D4 dedup vs Belebele/FLORES and held-out set; D5 3 non-overlapping seeds; D6 held-out perplexity as a check that
+  calibration took effect; D7 fixed build settings. Waiting on: Leipzig years, sizes and license line
+  (docs say CC BY; a search snippet said "protected by copyright" → recheck).
+  **Build checklist** for the proposal added to `proposal/README.md` (week-by-week, Jamir writes; Claude critiques).
 
 - 2026-11-23 — New `methodology/objectives-and-metrics.md`: the four objectives (plain wording), metrics per objective
   (planned vs. new exploratory), headline numbers, and which tool produces each (llama.cpp makes/runs models; scoring is
