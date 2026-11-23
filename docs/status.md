@@ -55,6 +55,10 @@
   calibration took effect; D7 fixed build settings. Waiting on: Leipzig years, sizes and license line
   (docs say CC BY; a search snippet said "protected by copyright" → recheck).
   **Build checklist** for the proposal added to `proposal/README.md` (week-by-week, Jamir writes; Claude critiques).
+  Same day: required chapter structure received (proposal = Ch I–IV; Gantt in Ch I §6; A–Z two-column glossary;
+  Ch IV adds chapter intro, Research Framework figure, Ethical Considerations). Checklist updated; Word version with a
+  section-by-section map: `Search-and-Shrink-Proposal-Checklist.docx`. Open decision #3 mostly answered (citation
+  style still to ask).
 
 - 2026-11-23 — New `methodology/objectives-and-metrics.md`: the four objectives (plain wording), metrics per objective
   (planned vs. new exploratory), headline numbers, and which tool produces each (llama.cpp makes/runs models; scoring is

@@ -15,9 +15,12 @@ The defended copra outline (VSU DCST, May 2026) used this order, so these drafts
 | `ch3-definition-of-terms.md` | III. Operational Definition of Terms | Outline |
 | `ch4-methodology.md` | IV. Methodology | Outline |
 
-**Open question (ask adviser by Nov 23):** the researcher understands the proposal as "chapters 1 to 3." In the copra
-outline, methodology was Chapter IV. Confirm whether the proposal covers I–IV in this format, and the required
-template (approval sheet FM-VPA-09, Gantt chart, literature-cited style).
+**Required structure (received 2026-11-23):** front matter (title page, approval sheet, table of contents);
+Ch I with the **Gantt chart inside section 6 (Time and Place)**; Ch II subsections by theme; Ch III a **two-column
+glossary sorted A–Z**; Ch IV = chapter introduction, 1. Research Design with a **Research Framework figure**,
+2. study-specific sections, 3. **Ethical Considerations**; back matter (Literature Cited, Appendices). So the proposal
+is chapters I–IV. Still to ask: citation style, FM-VPA-09 copy, required appendices.
+Full section-by-section map: `../Search-and-Shrink-Proposal-Checklist.docx`.
 
 ## Build checklist (Nov 23 → Dec 18)
 
@@ -30,13 +33,14 @@ methodology (the design; where the SRC questions live) → introduction (last, b
 
 ### Week A — Nov 23–29: foundations + pilot
 
-- [ ] **Admin (today):** ask the adviser (1) whether the proposal is chapters I–III or I–IV, (2) the template
-  (FM-VPA-09, Gantt chart, citation style), (3) how and when to book the panel. Done when: answers written in
-  `../meetings/`.
+- [ ] **Admin (today):** ask the adviser (1) citation style for Literature Cited, (2) a copy of FM-VPA-09 and the
+  Gantt format, (3) how and when to book the panel, (4) required appendices, (5) whether an AI-use disclosure is
+  needed. Done when: answers written in `../meetings/`.
+- [ ] **Template skeleton:** title page and front matter in the VSU template. Done when: saved.
 - [ ] **Read the big picture:** `../at-a-glance.md`, then `../primer.md` (~3 h, estimate). Write down every
   sentence you could not explain to a classmate. Done when: a question list exists; bring it to Claude.
-- [ ] **Ch III — Definitions** (`ch3-definition-of-terms.md`): define each listed term in your own words, as used
-  in this study. Learn from: `../primer.md` glossary. Done when: every term has 1–3 sentences; unsure ones marked `?`.
+- [ ] **Ch III — Definitions** (`ch3-definition-of-terms.md`): two-column glossary sorted A–Z; define each listed
+  term in your own words, as used in this study. Learn from: `../primer.md` glossary. Done when: every term has 1–3 sentences; unsure ones marked `?`.
 - [ ] **Pilot (proof of concept):** one 4B model, Q8_0/Q4_K_M/Q2_K, 100 Belebele questions × 3 languages;
   reproduce MTEB BM25 Cebuano (0.784). Learn from: `../labs/lab-01-run-a-local-model.md`, `../../experiments/README.md`.
   Done when: one accuracy table + floor check result. *This is the strongest thing you can show the panel.*
@@ -58,9 +62,13 @@ methodology (the design; where the SRC questions live) → introduction (last, b
 - [ ] **Close open decisions due Dec 7** in `../decisions.md`: #1 model list (use pilot floor check),
   #2 prompt language, #6 CebQuAD, #7 RQ3 protocol.
 - [ ] **Ch IV — Methodology** (`ch4-methodology.md`). Learn from: `../methodology/` (research-questions,
-  experiment-design, objectives-and-metrics, data-and-licensing, compute, error-taxonomy). Done when: every
-  section filled; you can answer "how do you know the calibration is valid?" from the text alone.
-- [ ] **Ch I — Introduction** (`ch1-introduction.md`), written last. Done when: objectives match Ch IV exactly.
+  experiment-design, objectives-and-metrics, data-and-licensing, compute, error-taxonomy). Required parts: chapter
+  introduction; 1. Research Design with the Research Framework figure; 2. study-specific sections; 3. Ethical
+  Considerations (new: copyright, consent and credit for the linguist/coder, no personal data, AI-use disclosure
+  if required). Done when: you can answer "how do you know the calibration is valid?" from the text alone.
+- [ ] **Ch I — Introduction** (`ch1-introduction.md`), written last, with the Gantt chart in section 6. Done when:
+  objectives match Ch IV exactly.
+- [ ] **Literature Cited:** only sources the chapters cite, each opened.
 - [ ] **Dec 7: full draft to the adviser.**
 
 ### Week C — Dec 7–13: revise + prepare to defend
