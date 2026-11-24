@@ -49,6 +49,9 @@
 
 ## Recent changes
 
+- 2026-11-24 — New `primer.md` (at a glance + primer + reading order) for Jamir to read and shape the study; open
+  decisions listed there as his call. No design decisions made.
+
 *Entries before 2026-11-24 refer to files now under `../archive/2026-11-search-and-shrink/` (same relative paths).*
 
 - 2026-11-24 — **Switched to study B and archived Search and Shrink.** Final state committed and tagged

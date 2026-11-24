@@ -123,6 +123,7 @@ project-sidapa/
 ├── KICKSTART_PROMPT.md        ← the prompt that starts a new Claude session
 ├── docs/
 │   ├── status.md              ← LIVE: where we are, this week, blockers (update every session)
+│   ├── primer.md              ← at a glance + primer + reading list for the new study
 │   ├── decisions.md           ← dated decision log + open decisions (append-only)
 │   ├── literature/
 │   │   └── sources.md         ← every source, with evidence tags

@@ -12,6 +12,7 @@ better than off-the-shelf multilingual embedders (design being locked; see `docs
 
 | If you want to… | Open |
 |---|---|
+| Understand the study (at a glance + primer + reading list) | `docs/primer.md` |
 | See where things stand right now | `docs/status.md` |
 | See why something was decided | `docs/decisions.md` |
 | See the sources and their evidence tags | `docs/literature/sources.md` |
