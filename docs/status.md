@@ -17,11 +17,12 @@
 ## This week (Nov 24–27)
 
 - [x] Archive Search and Shrink; set the repo up for the new study (2026-11-24).
-- [ ] **Novelty search:** is anyone fine-tuning or evaluating embedders for Cebuano (or Filipino) retrieval? Check
-  ACL Anthology, arXiv, Hugging Face, MTEB results, SEA-BED, FilBench. Write a new `literature/novelty-check.md`.
-- [ ] **Read the existing studies:** Navasardyan et al. 2026 (Armenian, LoResLM), the WiNLP 2025 Nigerian-language
+- [x] **Novelty search (first pass, 2026-11-24):** `literature/novelty-check.md`. No Cebuano embedder fine-tune or human-written
+  Cebuano retrieval test set found (`UNCONFIRMED`). Still to do: direct ACL Anthology / Scholar / SEACrowd / MTEB task-list checks.
+- [~] **Read the existing studies** (Armenian and Nigerian papers read at abstract/HTML level; CebQA paywalled): Navasardyan et al. 2026 (Armenian, LoResLM), the WiNLP 2025 Nigerian-language
   BGE-M3 paper, CebQA (Lagumbay & Roxas, NiDS 2025). One line each: what they did / what they did not do. Upgrade tags only after opening.
-- [ ] **CebQuAD:** size, license, how it was built (LLM-generated?), whether usable as a test set.
+- [ ] **CebQuAD:** QA pairs were GPT-4o-mini-generated, speaker-validated (snippet); size/license unknown. Get the paper (library/authors).
+- [ ] **Email CebuaNER authors** before using it in a benchmark (card requests this; CC BY-NC 4.0).
 - [ ] **Test-set feasibility:** can ~300–500 Cebuano question–passage pairs be written/checked in December (estimate)?
 - [ ] Draft RQs, IV/DV, metrics and validation plan; then one-page summary for Friday.
 - [ ] Fill in FM-VPA-06/07 (check whether they need a title/topic).

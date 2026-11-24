@@ -16,7 +16,7 @@ Tags: `VERIFIED` opened and checked · `VERIFY` secondary or memory · `UNCONFIR
 | FilBench | EMNLP 2025, arXiv 2508.03523; harness: https://github.com/filbench/filbench-eval | 27 LLMs on Tagalog/Cebuano; baseline numbers; SIB-200 ceb = 99 items | VERIFIED (72.23 vs 75.56 inconsistency in paper) |
 | SEA-BED | ACL 2026, arXiv 2508.12243 | SEA embedding benchmark; no Cebuano, no Filipino retrieval | VERIFIED |
 | Miller 2024 | "Adding Error Bars to Evals," arXiv 2411.00640 | Statistics recipe: clustered SEs, paired tests | VERIFIED |
-| CebQA details (search snippet) | NiDS 2025 proceedings (Springer, Jan 2026), dblp: https://dblp.org/db/conf/nids/nids2025-2.html | Retriever-reader: ElasticSearch/BM25 + FAISS/DPR; fine-tuned XLM-RoBERTa reader (F1 79.22); BM25 beat DPR; CebQuAD from pseudonymized news | VERIFY (abstract-level, not opened) |
+| CebQA details (search snippet) | NiDS 2025 proceedings (Springer, Jan 2026), dblp: https://dblp.org/db/conf/nids/nids2025-2.html | Retriever-reader: ElasticSearch/BM25 + FAISS/DPR; fine-tuned XLM-RoBERTa reader (F1 79.22); BM25 beat DPR; CebQuAD from pseudonymized news | VERIFY (abstract-level; Springer paywalled; CebQuAD QA pairs generated with GPT-4o mini, validated by Cebuano speakers — search snippet) |
 | Cebuano Wikipedia quality | "How Good is Your Wikipedia?" arXiv 2411.05527 | ~99% bot-written; dedup removes ~80% | VERIFIED |
 | Chimoto et al. | "Calibrating Beyond English," arXiv 2601.18306 | Target-language calibration (African languages) | VERIFY |
 | Community imatrix test | Reddit r/LocalLLaMA, English vs Norwegian vs Malayalam imatrix | No significant difference | VERIFY (forum; cite cautiously) |
@@ -87,7 +87,14 @@ Tags: `VERIFIED` opened and checked · `VERIFY` secondary or memory · `UNCONFIR
 
 | Short name | Citation / link | What it gives us | Tag |
 |---|---|---|---|
-| Navasardyan et al. 2026 | "Less is More: Adapting Text Embeddings for Low-Resource Languages with Small Scale Noisy Synthetic Data," LoResLM 2026 (EACL). https://aclanthology.org/2026.loreslm-1.31/ · arXiv 2603.22290 | Armenian: mE5 fine-tuned on 10k noisy translated pairs → +11–12% avg, ≈ models trained on ~1M pairs | VERIFY |
-| Nigerian-language BGE-M3 fine-tune | WiNLP 2025, pp. 224–229. https://aclanthology.org/2025.winlp-main.33.pdf | Contrastive BGE-M3 fine-tune for Yoruba/Igbo/Hausa improves retrieval | VERIFY (authors/title UNCONFIRMED) |
-| Qwen3-Embedding-ceb (alphaedge-ai) | https://huggingface.co/alphaedge-ai/Qwen3-Embedding-ceb-32768 · -16384 | Vocabulary-trimmed Qwen3-Embedding-0.6B for Cebuano (smaller, not retrained); no Cebuano retrieval scores seen | VERIFY (model card only) |
+| Navasardyan et al. 2026 | "Less is More: Adapting Text Embeddings for Low-Resource Languages with Small Scale Noisy Synthetic Data," LoResLM 2026 (EACL). https://aclanthology.org/2026.loreslm-1.31/ · arXiv 2603.22290 | Armenian: mE5-base fine-tuned on Reddit title–body pairs machine-translated with Gemma-2-27B; 10k pairs ≈ 1M; retrieval 58.15 → 79.35; 185 human gold pairs, 2 reviewers | VERIFIED (arXiv HTML, 2026-11-24) |
+| Omotoso et al. 2025 | "Improving BGE-M3 Multilingual Dense Embeddings for Nigerian Low Resource Languages," WiNLP 2025, pp. 224–229. https://aclanthology.org/2025.winlp-main.33/ | Contrastive BGE-M3 fine-tune (news-sourced pairs); Wura MRR 0.78→0.92 (Yorùbá) but MIRACL Yorùbá 0.5952→0.5996 (little out-of-domain gain) | VERIFIED (landing page/abstract; PDF not read) |
+| Qwen3-Embedding-ceb (alphaedge-ai) | https://huggingface.co/alphaedge-ai/Qwen3-Embedding-ceb-32768 · -16384 | Vocabulary-trimmed Qwen3-Embedding-0.6B for Cebuano (not retrained); Apache-2.0; no Cebuano retrieval scores | VERIFIED (model card) |
 | paraphrase-filipino-mpnet-base-v2 (Meedan) | https://huggingface.co/meedan/paraphrase-filipino-mpnet-base-v2 | Filipino sentence embedder distilled from English–Tagalog parallel data; similarity, not retrieval; no Cebuano | VERIFY |
+| CSR-L (Zeng et al. 2026) | "Code-Switching Information Retrieval: Benchmarks, Analysis, and the Limits of Current Retrievers," Findings of ACL 2026. https://arxiv.org/abs/2604.17632 | Human-written en–zh/en–ja code-switched queries; code-switching degrades strong retrievers; no Philippine languages | VERIFIED (arXiv HTML) |
+| WebFAQ (Dinzinger et al. 2025) | arXiv 2502.20936; data https://huggingface.co/datasets/PaDaS-Lab/webfaq | 75 languages, CC BY 4.0; Tagalog 21.5k QA pairs; no Cebuano | VERIFIED (HF page) |
+| CebuaNER data card | https://huggingface.co/datasets/josephimperial/CebuaNER | CC BY-NC 4.0; 4,258 news articles as token-level NER; email authors before benchmark use | VERIFIED |
+| Palito | https://huggingface.co/datasets/SEACrowd/palito | ceb included; literary + religious texts; LGPL | VERIFIED (card) |
+| DOST-ASTI BERT-ceb-cased | https://huggingface.co/dost-asti/BERT-ceb-cased | Cebuano masked LM (iTANONG-DS, ICNLSP 2023); no license shown | VERIFIED (card); license UNCONFIRMED |
+| Base-model licenses | https://huggingface.co/BAAI/bge-m3 · https://huggingface.co/intfloat/multilingual-e5-base · https://huggingface.co/intfloat/multilingual-e5-large-instruct | All MIT (card metadata) | VERIFIED |
+| JAIT 2025 Taglish benchmark | https://www.jait.us/articles/2025/JAIT-V16N2-233.pdf | Code-switched Tagalog–English LLM/RAG benchmark | UNCONFIRMED (PDF unreadable) |
