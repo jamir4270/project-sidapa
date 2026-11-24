@@ -40,3 +40,20 @@ Keep calibration text (Leipzig) separate from decoys (news) and from test passag
 - **Scraping:** prefer CebuaNER; if scraping, respect site terms and robots.txt.
 - Chapter 3 includes a license table (dataset, license, citation, how used).
 - Ask for VSU's IP policy (RA 10372 requires schools to adopt one) and cite it.
+
+## CebQuAD split-leakage check (2026-11-24)
+
+Script: `experiments/scripts/check_cebquad_splits.py` (stdlib only; data in `data/cebquad/`, git-ignored).
+Source: `jhoannarica/cebquad_split` CSVs (train 19,300 / validation 2,732 / test 5,597 rows; no license stated).
+
+| Check | Result |
+|---|---|
+| Split unit | **By article:** 0 article IDs shared between any two splits |
+| Duplicate articles under different IDs | 3 across splits (2 train–val, 1 train–test); also ~6 within train |
+| Shared passages (contexts) | train–val 25, train–test 13, val–test 1 (test: 13 of 3,842 = 0.3%) |
+| Identical question + passage pairs | train–val 3, train–test 2, val–test 0 |
+| Generic questions | 180 of 5,510 test questions (3.3%) also occur, word for word, with a different passage (e.g. "Asa gidala ang biktima human sa aksidente?"). Lower bound: near-identical templated variants are more common |
+
+**Action:** before any test run, drop test/validation passages and pairs that also occur in train (exact match after
+whitespace/case normalization). For retrieval, generic questions have several plausible passages: either filter them out
+or treat every passage that answers them as relevant (`TBD`). Report the number removed.

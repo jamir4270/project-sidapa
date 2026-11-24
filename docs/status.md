@@ -26,6 +26,8 @@
 - [~] **CebuaNER:** Jamir reports it is usable (2026-11-24). CC BY-NC 4.0 (card); card asks for an email before benchmark use →
   keep that email (or the permission) on record.
 - [ ] **Test-set feasibility:** can ~300–500 Cebuano question–passage pairs be written/checked in December (estimate)?
+- [x] **CebQuAD split-leakage check** (2026-11-24): split by article; tiny leakage (3 duplicate articles, 0.3% of test passages)
+  → dedupe before testing; 3.3%+ of test questions are generic templates (see `methodology/data-and-licensing.md`).
 - [ ] Draft RQs, IV/DV, metrics and validation plan; then one-page summary for Friday.
 - [ ] Fill in FM-VPA-06/07 (check whether they need a title/topic).
 - [ ] AWS: credit amount/expiry, GPU quota request, Budgets alert (still useful; smaller workload).
