@@ -21,8 +21,10 @@
   Cebuano retrieval test set found (`UNCONFIRMED`). Still to do: direct ACL Anthology / Scholar / SEACrowd / MTEB task-list checks.
 - [~] **Read the existing studies** (Armenian and Nigerian papers read at abstract/HTML level; CebQA paywalled): Navasardyan et al. 2026 (Armenian, LoResLM), the WiNLP 2025 Nigerian-language
   BGE-M3 paper, CebQA (Lagumbay & Roxas, NiDS 2025). One line each: what they did / what they did not do. Upgrade tags only after opening.
-- [ ] **CebQuAD:** QA pairs were GPT-4o-mini-generated, speaker-validated (snippet); size/license unknown. Get the paper (library/authors).
-- [ ] **Email CebuaNER authors** before using it in a benchmark (card requests this; CC BY-NC 4.0).
+- [~] **CebQuAD:** Jamir reports it is usable (2026-11-24; basis — license text or author permission — to be recorded in
+  `methodology/data-and-licensing.md`). QA pairs GPT-4o-mini-generated, speaker-validated (snippet); size still unknown.
+- [~] **CebuaNER:** Jamir reports it is usable (2026-11-24). CC BY-NC 4.0 (card); card asks for an email before benchmark use →
+  keep that email (or the permission) on record.
 - [ ] **Test-set feasibility:** can ~300–500 Cebuano question–passage pairs be written/checked in December (estimate)?
 - [ ] Draft RQs, IV/DV, metrics and validation plan; then one-page summary for Friday.
 - [ ] Fill in FM-VPA-06/07 (check whether they need a title/topic).
