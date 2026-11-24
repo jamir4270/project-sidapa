@@ -1,29 +1,28 @@
-# Search and Shrink — Cebuano Thesis Workspace
+# Cebuano Thesis Workspace (project-sidapa)
 
-**Working title:** Search and Shrink: Quantization and Calibration Losses for Cebuano, Tagalog and English in Small Offline Language Models
+**Working title:** `TBD` — new study (2026-11-24): fine-tuning and evaluating an embedding model for Cebuano passage retrieval.
+The earlier "Search and Shrink" compression study is archived in `archive/2026-11-search-and-shrink/`.
 
 BS Computer Science thesis, Visayas State University. Researcher: Jamir Oasis M. Andrade.
 
-**What it is:** a measurement study of how much small AI models lose in Cebuano when compressed to run
-offline on cheap hardware, whether Cebuano "calibration" text reduces the loss, and how Cebuano search
-holds up on a realistic corpus.
+**What it is:** a study of whether an embedding model fine-tuned on Cebuano finds the right Cebuano passage
+better than off-the-shelf multilingual embedders (design being locked; see `docs/status.md`).
 
 ## Start here
 
 | If you want to… | Open |
 |---|---|
-| Get the gist in 5 minutes | `docs/at-a-glance.md` |
-| Understand the whole study properly | `docs/primer.md` |
 | See where things stand right now | `docs/status.md` |
-| See what to do each week | `docs/timeline.md` |
 | See why something was decided | `docs/decisions.md` |
-| Check whether a claim is safe to make | `docs/literature/novelty-check.md` |
+| See the sources and their evidence tags | `docs/literature/sources.md` |
+| See the set-aside compression study | `archive/2026-11-search-and-shrink/README.md` |
 | Start a new Claude session | `KICKSTART_PROMPT.md` |
 
 ## Folder map
 
 ```
-docs/          thesis documentation (status, primer, plans, chapters, meeting notes)
+docs/          thesis documentation (status, decisions, sources, methodology, proposal, meetings)
+archive/       set-aside studies, read-only
 reference/     background material: the dropped copra study, earlier research reports
 experiments/   code for the experiments (see experiments/README.md)
 data/          local-only data and model files — never committed
@@ -34,7 +33,7 @@ data/          local-only data and model files — never committed
 | Date | Milestone |
 |---|---|
 | Week of 2026-11-17 | NCRC-V check done; copra dropped (2026-11-21) |
-| 2026-11-30 | Proof of concept done |
+| 2026-11-27 | SRC meeting (FM-VPA-06/07) |
 | **2026-12-18** | **Proposal defense** |
-| 2027-01-04 → 02-21 | Experiments (cloud) |
+| 2027-01 → 02 | Experiments (dates `TBD`) |
 | Mid to late May 2027 | Final defense |

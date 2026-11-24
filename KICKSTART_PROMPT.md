@@ -1,6 +1,6 @@
 # Kickstart Prompts
 
-Use these in Claude Desktop with this folder (`cebuano-thesis/`) connected as the project's working folder.
+Use these in Claude Desktop with this folder (`project-sidapa/`) connected as the project's working folder.
 
 ---
 
@@ -11,8 +11,8 @@ You're helping me with my undergraduate CS thesis. This folder is the thesis wor
 
 Before doing anything else:
 1. Read AGENTS.md fully. It has the project context, my background, how to talk to me, and hard rules.
-2. Then read, in order: docs/status.md, docs/at-a-glance.md, docs/primer.md, docs/decisions.md, docs/timeline.md,
-   docs/literature/novelty-check.md (summary section), and reference/copra-study.md.
+2. Then read, in order: docs/status.md, docs/decisions.md, docs/literature/sources.md, and
+   archive/2026-11-search-and-shrink/README.md (the set-aside study; background only).
 
 Then reply with:
 A. A 10-line summary of the study in plain language: what it is, the core research questions, what's novel,
@@ -42,21 +42,11 @@ At the end of the session, update docs/status.md (and docs/decisions.md if we de
 
 ## 3. Useful task prompts
 
-**Proof of concept (week 2)**
-```
-Help me build the week-2 proof of concept described in docs/timeline.md and docs/methodology/experiment-design.md,
-following experiments/README.md. Start with reproducing the MTEB BelebeleRetrieval Cebuano BM25 number (0.784).
-Write code in experiments/, test on 20 items first, and log results as JSONL.
-```
-
-**Drafting a proposal chapter**
-```
-Draft docs/proposal/ch2-review-of-literature.md from its outline. Cite only sources in docs/literature/sources.md,
-keep evidence tags on claims, and use the safe novelty wording from docs/literature/novelty-check.md.
-```
+*Old task prompts (proof of concept, chapter drafting, weekly review) referred to the archived study; rewrite them
+once the new study's RQs, timeline and chapter outlines exist.*
 
 **Weekly review**
 ```
-Compare docs/status.md and docs/timeline.md with what's actually done. Mark the week's statuses, list what slipped,
+Compare docs/status.md with what's actually done. Mark the week's statuses, list what slipped,
 and propose how to recover without moving the Dec 18 defense.
 ```

@@ -2,47 +2,54 @@
 
 *Update at the end of every working session. Newest information at the top of each section.*
 
-**Last updated:** 2026-11-23
-**Phase:** 1 of 5 — Prepare and propose (Nov 17 → Dec 18)
-**Next milestone:** Proposal defense, Friday 2026-12-18
+**Last updated:** 2026-11-24
+**Phase:** 1 — Prepare and propose (→ Dec 18)
+**Next milestones:** SRC meeting + FM-VPA-06/07, **Fri 2026-11-27**; full draft to adviser Dec 7; proposal defense **Fri 2026-12-18**
 
 ## Where we are
 
-- Topic chosen; research questions drafted; novelty checked (2026-11-17); plan and timeline written.
+- **New study (2026-11-24):** fine-tuning and evaluating an embedding model for Cebuano passage retrieval
+  (`decisions.md`). Approval so far covers the direction, not a locked design; the RQs are not written yet.
+- The "Search and Shrink" compression study is **archived** in `../archive/2026-11-search-and-shrink/` (git tag
+  `search-and-shrink-final`). Reusable pieces are listed in that folder's README.
 - Nothing has been run yet.
-- **Topic is final (2026-11-21):** NCRC-V check done; the copra study is dropped. No adviser approval is needed before the proposal; the adviser and panel weigh in at the Dec 18 defense.
 
-## This week (Nov 17–23)
+## This week (Nov 24–27)
 
-**From Nov 23 on, the working list is the build checklist in `proposal/README.md`.**
-
-- [x] NCRC-V visit done (2026-11-21). Copra study dropped.
-- [ ] Optional: brief the adviser/instructor with the one-page pitch (no approval needed; useful for chapter-coverage question and linguist referral).
-- [ ] ~~Ask the department about borrowing the GPU~~ Low priority: department PC is now last-resort backup only (liability risk).
-- [ ] Ask VSU language faculty whether a Cebuano linguist can verify the error taxonomy. Also find a second Cebuano-speaking coder for RQ3 (see revised protocol).
-- [ ] Laptop: check Task Manager → Memory → "Slots used"; set the page file to System managed.
-- [x] Install llama.cpp; `llama-bench` CPU vs Vulkan (done in Lab 1; learning record only).
-- [ ] Get the CebQA chapter (venue, year, CebQuAD size, license).
-- [ ] Email the FilBench team asking whether anyone is working on Cebuano quantization or calibration.
-- [ ] Check whether the copra title is registered anywhere that needs a change form.
-- [ ] AWS: check credit amount and expiry; request G-instance vCPU quota (on-demand + spot) in ap-southeast-1; set a Budgets alert. Quota approval can take days — do it now.
-- [~] Lab 1 done. Step 5: Qwen3-4B Q4_K_M on Vulkan = 39.5 t/s reading, 5.85 t/s writing vs CPU-only 34.8 / 4.99 → Vulkan iGPU modestly faster (in `compute.md`). Lab 1 complete. Results logged in `labs/lab-01-run-a-local-model.md`. Original task: follow `labs/lab-01-run-a-local-model.md` — install llama.cpp, chat with Qwen3-1.7B at Q4_K_M vs Q2_K in Cebuano/Tagalog/English, run `llama-bench` (learning only; thesis files are self-quantized).
-- [x] Add a GitHub remote and push (backup). Done 2026-11-17 → github.com/jamir4270/project-sidapa. Confirm the repo is **private** on GitHub.
+- [x] Archive Search and Shrink; set the repo up for the new study (2026-11-24).
+- [ ] **Novelty search:** is anyone fine-tuning or evaluating embedders for Cebuano (or Filipino) retrieval? Check
+  ACL Anthology, arXiv, Hugging Face, MTEB results, SEA-BED, FilBench. Write a new `literature/novelty-check.md`.
+- [ ] **Read the existing studies:** Navasardyan et al. 2026 (Armenian, LoResLM), the WiNLP 2025 Nigerian-language
+  BGE-M3 paper, CebQA (Lagumbay & Roxas, NiDS 2025). One line each: what they did / what they did not do. Upgrade tags only after opening.
+- [ ] **CebQuAD:** size, license, how it was built (LLM-generated?), whether usable as a test set.
+- [ ] **Test-set feasibility:** can ~300–500 Cebuano question–passage pairs be written/checked in December (estimate)?
+- [ ] Draft RQs, IV/DV, metrics and validation plan; then one-page summary for Friday.
+- [ ] Fill in FM-VPA-06/07 (check whether they need a title/topic).
+- [ ] AWS: credit amount/expiry, GPU quota request, Budgets alert (still useful; smaller workload).
 
 ## Waiting on
 
 | What | From | Since |
 |---|---|---|
 | GPU quota increase (G instances) | AWS | not requested yet |
-| A linguist | VSU language faculty | — |
 
 ## Blockers / risks right now
 
-- **RQ3 coders:** no linguist or second Cebuano coder yet. Name by Dec 14; Jan 31 cutoff, then fallback.
-- **Time:** five weeks to the proposal defense. Protect the week-2 proof of concept.
-- **Floor effect (Lab 1, 2026-11-22):** Qwen3-1.7B loops in Tagalog/Cebuano even at Q8_0. If a model scores near chance on Belebele Cebuano, it can't show compression loss. Week-2 proof of concept must run the Q8_0 floor check per candidate (proposed rule in `decisions.md`, open decision #1).
+- **Time:** three days to the SRC meeting with no RQs yet; 3.5 weeks to the defense.
+- **Test data:** Belebele retrieval is near ceiling (e5-large-instruct 0.875 ceb nDCG@10) and can't double as training
+  data; the study needs a harder held-out Cebuano test set. This is the main risk.
+- **Training data:** Cebuano query–passage pairs must be built (translation or LLM generation); small LLMs write poor
+  Cebuano (Lab 1, archived).
+- **Novelty unconfirmed:** the "no Cebuano embedder fine-tune exists" claim is from search snippets only.
 
 ## Recent changes
+
+*Entries before 2026-11-24 refer to files now under `../archive/2026-11-search-and-shrink/` (same relative paths).*
+
+- 2026-11-24 — **Switched to study B and archived Search and Shrink.** Final state committed and tagged
+  (`search-and-shrink-final`); old-study docs moved with `git mv` to `archive/2026-11-search-and-shrink/` (README explains
+  why and what was reused). Live AGENTS.md, README, KICKSTART and proposal README updated with banners/links; AGENTS.md
+  sections 1–5 still describe the old study until the new RQs are locked.
 
 - 2026-11-24 — **Scope discussion (not decided):** Jamir questioned why RQ1 (search) exists. History: it survived from merging
   two Nov 17 ideas after its novelty was taken. Claude's recommendation: drop RQ1 as an RQ; frame the study as the compressed

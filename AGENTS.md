@@ -3,6 +3,10 @@
 Context and working rules for any AI agent (Claude or otherwise) helping with this thesis.
 Read this file fully before doing anything. Then read `docs/status.md`.
 
+> **Being rewritten for the new study (2026-11-24).** Focus switched to fine-tuning and evaluating an embedding model
+> for Cebuano retrieval (`docs/decisions.md`). Sections describing "Search and Shrink" are kept until the new RQs are
+> locked; the old study is in `archive/2026-11-search-and-shrink/`.
+
 ---
 
 ## 1. The project in one paragraph
@@ -53,7 +57,7 @@ RQ numbers follow the pipeline order (search, then read). **RQ2 + RQ2b are the c
 | RQ2b | At the lowest levels (Q3_K_M, Q2_K), does calibrating the compression (llama.cpp importance matrix) with Cebuano or Tagalog text recover accuracy compared with English or no calibration? | **Core, most original** |
 | RQ3 | What kinds of mistakes do the models make in Cebuano, and which kinds grow with compression? (Categories finalized and verified by a Cebuano linguist.) | Supporting |
 
-Full detail: `docs/methodology/research-questions.md`.
+Full detail (archived): `archive/2026-11-search-and-shrink/docs/methodology/research-questions.md`.
 
 ## 5. Novelty: what is taken and what is ours (checked 2026-11-17)
 
@@ -71,7 +75,7 @@ Full detail: `docs/methodology/research-questions.md`.
 - End-to-end Cebuano search-then-answer test on a realistic corpus, building on MTEB and CebQA baselines.
 - A Cebuano error taxonomy of LLM output, verified by a linguist.
 
-Full detail: `docs/literature/novelty-check.md`.
+Full detail (archived): `archive/2026-11-search-and-shrink/docs/literature/novelty-check.md`.
 
 ## 6. Hard rules for agents
 
@@ -112,32 +116,25 @@ Full detail: `docs/methodology/compute.md`.
 ## 8. Repository map
 
 ```
-cebuano-thesis/
+project-sidapa/
 ├── AGENTS.md                  ← you are here (rules + context)
 ├── CLAUDE.md                  ← imports AGENTS.md for Claude tools
 ├── README.md                  ← human-facing map of the project
 ├── KICKSTART_PROMPT.md        ← the prompt that starts a new Claude session
 ├── docs/
 │   ├── status.md              ← LIVE: where we are, this week, blockers (update every session)
-│   ├── primer.md              ← the long explainer: background → prior work → methods → risks
-│   ├── at-a-glance.md         ← one-page overview with analogies
-│   ├── decisions.md           ← dated decision log + open decisions
-│   ├── timeline.md            ← week-by-week plan to the final defense
+│   ├── decisions.md           ← dated decision log + open decisions (append-only)
 │   ├── literature/
-│   │   ├── sources.md         ← every source, with evidence tags
-│   │   └── novelty-check.md   ← what's taken, what's ours, safe wording
+│   │   └── sources.md         ← every source, with evidence tags
 │   ├── methodology/
-│   │   ├── research-questions.md
-│   │   ├── experiment-design.md   ← grid, fixed settings, statistics
-│   │   ├── objectives-and-metrics.md ← each objective's metrics and the tool that produces them
 │   │   ├── data-and-licensing.md  ← datasets, decoy corpus, copyright
-│   │   ├── error-taxonomy.md      ← RQ3 protocol with the linguist
 │   │   └── compute.md
-│   ├── labs/                  ← hands-on learning labs (e.g. running a local model)
-│   ├── proposal/              ← chapter drafts for the proposal defense
-│   └── meetings/              ← adviser, NCRC-V, linguist meeting notes
+│   ├── proposal/              ← VSU proposal rules; chapter drafts for the new study go here
+│   └── meetings/              ← adviser, SRC, linguist meeting notes
+├── archive/
+│   └── 2026-11-search-and-shrink/ ← the set-aside compression study (read-only; see its README)
 ├── reference/
-│   ├── copra-study.md         ← the dropped previous study (background only)
+│   ├── copra-study.md         ← the dropped first study (background only)
 │   └── reports/               ← earlier research reports (read-only background)
 ├── experiments/               ← code lives here (see experiments/README.md)
 └── data/                      ← local only, git-ignored (copyrighted corpora, model files)
