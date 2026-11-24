@@ -44,6 +44,18 @@
 
 ## Recent changes
 
+- 2026-11-24 — **Scope discussion (not decided):** Jamir questioned why RQ1 (search) exists. History: it survived from merging
+  two Nov 17 ideas after its novelty was taken. Claude's recommendation: drop RQ1 as an RQ; frame the study as the compressed
+  *reader* for offline Cebuano document Q&A; a multi-passage distractor condition is a candidate (novelty UNCONFIRMED).
+  Jamir also asked about pivoting to fine-tuning an embedder for Cebuano retrieval: quick scan found the method established
+  for other low-resource languages (Armenian, Nigerian languages) and no Cebuano fine-tune paper (UNCONFIRMED); new sources
+  logged in `literature/sources.md`. Decide at the Wed scope session.
+
+- 2026-11-24 — **Adviser approved the topic change** (closes the manual's change-of-topic risk; logged in
+  `decisions.md`). SRC already formed; FM-VPA-06/07 to be signed **Fri Nov 27**. To be ready, the scope decision
+  (SRC focus question) and the calibration spec lock moved from Week B to **Wed–Thu this week**. Checklist v2.1
+  (README + docx) re-planned by day.
+
 - 2026-11-23 — **SRC feedback** (one member, after a verbal pitch with no handout): scope may be too small; novel
   beyond evaluating pretrained models?; needs focus (too many variables); "weak"; how is calibration valid?
   Claude's read: wide-but-shallow. Proposed (not decided): shrink RQ1 to a condition inside RQ2, deepen RQ2b
@@ -59,6 +71,12 @@
   Ch IV adds chapter intro, Research Framework figure, Ethical Considerations). Checklist updated; Word version with a
   section-by-section map: `Search-and-Shrink-Proposal-Checklist.docx`. Open decision #3 mostly answered (citation
   style still to ask).
+  Later the same day: **DCST thesis manual (v2, Sep 2026) received**; checklist docx rebuilt as v2 (formatting rules,
+  forms FM-VPA-06/07/08/09/11, HERC ethics review, proposal rubric). Citation style = **APA 7** (decision #3 closed
+  except FM-VPA-09 and appendices). **New risks:** (1) the manual's change-of-topic process says discuss with the adviser
+  first; the copra outline was defended in May 2026, so the Nov 21 "no adviser step" note may be wrong; settle
+  this week. (2) RQ3 coders may need HERC clearance, which can start only after FM-VPA-09 is signed. (3) Model licenses
+  (Gemma, Llama) must be in the license table.
 
 - 2026-11-23 — New `methodology/objectives-and-metrics.md`: the four objectives (plain wording), metrics per objective
   (planned vs. new exploratory), headline numbers, and which tool produces each (llama.cpp makes/runs models; scoring is

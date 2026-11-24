@@ -4,6 +4,32 @@
 
 ## Decisions
 
+### 2026-11-24 — Study focus: Cebuano embedding-model fine-tuning for retrieval (option B)
+- **Decision:** The proposal will be about fine-tuning and evaluating an embedding model for Cebuano passage retrieval
+  (IV: off-the-shelf vs. Cebuano-fine-tuned embedder; output: a fine-tuned model; comparison on Cebuano retrieval).
+  The Search and Shrink compression/calibration study is set aside and will be archived (plan pending approval).
+- **Reason:** Matches the researcher's interest (RAG); answers the SRC's "novel beyond evaluating pretrained models?";
+  one coherent system instead of two loosely linked studies; method proven for other low-resource languages
+  (Armenian, Nigerian languages; `VERIFY`, see `literature/sources.md`).
+- **Still to do before locking:** proper novelty search (no one doing Cebuano retrieval fine-tuning yet?); read the
+  existing low-resource studies; CebQuAD license/size; test-set plan (~300–500 hand-checked pairs, estimate).
+- **By:** Jamir.
+
+### 2026-11-24 — Clarification: approval covers the direction, not a locked design
+- **Decision:** The adviser/SRC green light is to pursue a study in this area; the proposal's focus is **not yet locked**.
+  Candidates under discussion: (A) compression/calibration study (current docs, RQ1 likely dropped) and (B) fine-tuning
+  and evaluating an embedding model for Cebuano retrieval. To be settled before the SRC meeting (Fri Nov 27).
+- **Refines:** the entry below ("Adviser approves the topic change").
+- **By:** Jamir.
+
+### 2026-11-24 — Adviser approves the topic change; SRC formed; forms target Friday Nov 27
+- **Decision:** The adviser has agreed to the switch from the copra study to Search and Shrink, which satisfies the
+  manual's "Change of Thesis Topic" step (discuss with the adviser first). An SRC already exists. FM-VPA-06/07
+  paperwork is not done yet; target: signatures on **Friday 2026-11-27**, once the scope is settled and Jamir can
+  explain the study confidently.
+- **Supersedes:** the 2026-11-21 note that no adviser step was needed before the proposal.
+- **By:** Jamir, with the adviser.
+
 ### 2026-11-23 — Objectives-and-metrics reference; exploratory metrics added
 - **Decision:** New `methodology/objectives-and-metrics.md` maps each objective to its metrics, headline number and tool.
   Adds exploratory metrics computed from already-planned data (no extra runs): above-chance retained, letter collapse,
