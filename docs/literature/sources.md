@@ -95,7 +95,7 @@ Tags: `VERIFIED` opened and checked · `VERIFY` secondary or memory · `UNCONFIR
 | WebFAQ (Dinzinger et al. 2025) | arXiv 2502.20936; data https://huggingface.co/datasets/PaDaS-Lab/webfaq | 75 languages, CC BY 4.0; Tagalog 21.5k QA pairs; no Cebuano | VERIFIED (HF page) |
 | CebuaNER data card | https://huggingface.co/datasets/josephimperial/CebuaNER | CC BY-NC 4.0; 4,258 news articles as token-level NER; email authors before benchmark use | VERIFIED |
 | Palito | https://huggingface.co/datasets/SEACrowd/palito | ceb included; literary + religious texts; LGPL | VERIFIED (card) |
-| DOST-ASTI BERT-ceb-cased | https://huggingface.co/dost-asti/BERT-ceb-cased | Cebuano masked LM (iTANONG-DS, ICNLSP 2023); no license shown | VERIFIED (card); license UNCONFIRMED |
+| DOST-ASTI BERT-ceb-cased | https://huggingface.co/dost-asti/BERT-ceb-cased | Cebuano masked LM (iTANONG-DS, ICNLSP 2023); no license shown on card; Jamir reports OK to use (2026-11-24; record basis) | VERIFIED (card); license VERIFY |
 | Base-model licenses | https://huggingface.co/BAAI/bge-m3 · https://huggingface.co/intfloat/multilingual-e5-base · https://huggingface.co/intfloat/multilingual-e5-large-instruct | All MIT (card metadata) | VERIFIED |
 | JAIT 2025 Taglish benchmark | https://www.jait.us/articles/2025/JAIT-V16N2-233.pdf | Code-switched Tagalog–English LLM/RAG benchmark | UNCONFIRMED (PDF unreadable) |
 | CebQuAD on HF | https://huggingface.co/datasets/jhoannarica/cebquad_split (source articles: jhoannarica/superbalita_split) | ~27.6k QA rows (train 19.3k / val 2.73k / test 5.6k); columns incl. article_id, context, question, answer; SunStar Superbalita articles, pseudonymized; **no license stated**; split method and question authorship not stated | VERIFIED (HF page, 2026-11-24) |
