@@ -1,10 +1,8 @@
 # Local data and models — never commit (copyright and size)
 data/*
 !data/README.md
-*.gguf
 *.safetensors
 *.bin
-*.imatrix
 
 # Experiment outputs (keep summaries in docs/, raw logs local or in private storage)
 experiments/results/raw/

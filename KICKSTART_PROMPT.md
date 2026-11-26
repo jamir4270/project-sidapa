@@ -1,6 +1,6 @@
 # Kickstart Prompts
 
-Use these in Claude Desktop with this folder (`project-sidapa/`) connected as the project's working folder.
+Use these in Claude Desktop with this folder (`project-sidapa/`) as the working folder.
 
 ---
 
@@ -10,22 +10,13 @@ Use these in Claude Desktop with this folder (`project-sidapa/`) connected as th
 You're helping me with my undergraduate CS thesis. This folder is the thesis workspace.
 
 Before doing anything else:
-1. Read AGENTS.md fully. It has the project context, my background, how to talk to me, and hard rules.
-2. Then read, in order: docs/status.md, docs/decisions.md, docs/literature/sources.md, and
-   archive/2026-11-search-and-shrink/README.md (the set-aside study; background only).
+1. Read AGENTS.md fully.
+2. Then read docs/status.md, docs/primer.md and docs/context-checklist.md.
 
 Then reply with:
-A. A 10-line summary of the study in plain language: what it is, the core research questions, what's novel,
-   and what's already taken by prior work.
-B. Where we are right now and what this week requires, as a checklist.
-C. Anything in the docs that looks inconsistent, outdated, or risky. Be critical.
-D. One question for me, if anything blocks you.
-
-Rules for this session:
-- Don't edit any files yet, except that you may fix obvious typos if you tell me.
-- Don't invent sources or numbers; use the evidence tags in AGENTS.md.
-- Explain jargon with analogies. I have a strong software engineering background but I'm not an ML expert.
-- Be pragmatic and critical; don't flatter.
+A. A 5-line summary of the study as the repo describes it.
+B. Which checklist items you need from me first, and why.
+C. Anything that looks inconsistent or risky. Be critical.
 ```
 
 ---
@@ -40,10 +31,11 @@ At the end of the session, update docs/status.md (and docs/decisions.md if we de
 
 ---
 
-## 3. Useful task prompts
+## 3. Handing over context
 
-*Old task prompts (proof of concept, chapter drafting, weekly review) referred to the archived study; rewrite them
-once the new study's RQs, timeline and chapter outlines exist.*
+```
+Process context-checklist item [N]. Here it is: [paste or attach].
+```
 
 **Weekly review**
 ```
