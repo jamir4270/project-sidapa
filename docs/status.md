@@ -29,6 +29,11 @@
 
 ## Recent changes
 
+- 2026-11-26 — Study guide `reference/reports/rag-and-embeddings-study-guide.md` + `.pdf` (v2): restructured into
+  5 breadth-first sections (why the field exists, history, mechanics, methods/state, defense questions + reading
+  path), with [CORE]/[ADJACENT] labels and "where the analogy breaks" notes. Background reading only; refs tagged
+  `[VERIFY·L]` (listing checked) or `[VERIFY]` (from memory). Nothing upgraded to `VERIFIED`.
+
 - 2026-11-26 — Fresh start: removed all earlier study material, literature notes, dataset files and scripts
   (still in git history). Kept the folder structure, rewrote `primer.md` (at a glance + primer) without references
   to earlier work, and added `context-checklist.md`.
